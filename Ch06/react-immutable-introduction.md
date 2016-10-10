@@ -5,7 +5,7 @@
 ## 前言
 一般來說在 JavaScript 中有兩種資料類型：Primitive（String、Number、Boolean、null、undefinded）和 Object（Reference）。在 JavaScript 中物件的操作比起 Java 容易很多，但也因為相對彈性不嚴謹，所以產生了一些問題。在 JavaScript 中的 Object（物件）資料是 Mutable（可以變的），由於是使用 Reference 的方式，所以當修改到複製的值也會修改到原始值。例如下面的 `map2` 值是指到 `map1`，所以當 `map1` 值一改，`map2` 的值也會受影響。 
 
-```
+```javascript
 var map1 = { a: 1 }; 
 var map2 = map1; 
 map2.a = 2
@@ -33,6 +33,8 @@ ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack
 1. Map：類似於 key/value 的 object，在 ES6 也有原生 `Map` 對應
 
   ```javascript
+  const Map= Immutable.Map;
+  
   // 1. Map 大小
   const map1 = Map({ a: 1 });
   map1.size
@@ -68,6 +70,8 @@ ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack
 2. List：有序且可以重複值，對應於一般的 Array
 
   ```javascript
+  const List= Immutable.List;
+  
   // 1. 取得 List 長度
   const arr1 = List([1, 2, 3]);
   arr1.size
@@ -102,6 +106,8 @@ ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack
 3. Set：沒有順序且不能重複的列表
 
   ```javascript
+  const Set= Immutable.Set;
+  
   // 1. 建立 Set
   const set1 = Set([1, 2, 3]);
   // => Set { 1, 2, 3 }
@@ -117,7 +123,7 @@ ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack
 
   // 4. 取聯集
   const set4 = Set([2, 3, 4, 5, 6]);
-  $set1.union(set1);
+  set1.union(set4);
   // => Set { 1, 2, 3, 4, 5, 6 }
 
   // 5. 取交集
@@ -197,7 +203,7 @@ ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack
 傳統 JavaScript 比較方式，若資料型態為 Primitive 就不會有問題：
 
 ```javascript
-// 在 shouldComponentUpdate 比較接下來的 props 一否一致，若相同則不重新渲染，提昇效能
+// 在 shouldComponentUpdate 比較接下來的 props 是否一致，若相同則不重新渲染，提昇效能
 shouldComponentUpdate (nextProps) {
     return this.props.value !== nextProps.value;
 }
@@ -207,7 +213,7 @@ shouldComponentUpdate (nextProps) {
 
 ```javascript
 // 假設 this.props.value 為 { foo: 'app' }
-// 架設 nextProps.value 為 { foo: 'app' },
+// 假設 nextProps.value 為 { foo: 'app' },
 // 雖然兩者值是一樣，但由於 reference 位置不同，所以視為不同。但由於值一樣應該要避免重複渲染
 this.props.value !== nextProps.value; // true
 ```
