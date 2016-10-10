@@ -107,7 +107,11 @@
 	    filename: 'index_bundle.js',
 	  },
 	  module: {
+<<<<<<< HEAD
 	  	// loaders 则是放想要使用的 loaders，在这边是使用 babel-loader 将所有 .js（这边用到正则式）相关档案（排除了 npm 安装的套件位置 node_modules）转译成浏览器可以阅读的 JavaScript。preset 则是使用的 babel 转译规则，这边使用 react、es2015
+=======
+	  	// loaders 則是放欲使用的 loaders，在這邊是使用 babel-loader 將所有 .js（這邊用到正則式）相關檔案（排除了 npm 安裝的套件位置 node_modules）轉譯成瀏覽器可以閱讀的 JavaScript。preset 則是使用的 babel 轉譯規則，這邊使用 react、es2015。若是已經單獨使用 .babelrc 作為 presets 設定的話，則可以省略 query
+>>>>>>> kdchang/master
 	    loaders: [
 	      {
 	        test: /\.js$/,
@@ -147,7 +151,11 @@
 	$ npm install --save react react-dom
 	```
 
+<<<<<<< HEAD
 6. 编写 Component（记得把 `index.html` 以及 `index.js` 放到 `app` 文件夹底下喔！）
+=======
+6. 撰寫 Component（記得把 `index.html` 以及 `index.js` 放到 `app` 資料夾底下喔！）
+>>>>>>> kdchang/master
 	`index.html`
 
 	```html 

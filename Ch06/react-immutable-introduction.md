@@ -72,7 +72,11 @@ ImmutableJS 提供了 7 种不可修改的数据类型：`List`、`Map`、`Stack
   ```javascript
   const List= Immutable.List;
   
+<<<<<<< HEAD
   // 1. 取得 List 长度
+=======
+  // 1. 取得 List 長度
+>>>>>>> kdchang/master
   const arr1 = List([1, 2, 3]);
   arr1.size
   // => 3
@@ -203,7 +207,11 @@ ImmutableJS 提供了 7 种不可修改的数据类型：`List`、`Map`、`Stack
 传统 JavaScript 比较方式，若数据型态为 Primitive 就不会有问题：
 
 ```javascript
+<<<<<<< HEAD
 // 在 shouldComponentUpdate 比较接下来的 props 一否一致，若相同则不重新渲染，提升性能
+=======
+// 在 shouldComponentUpdate 比較接下來的 props 是否一致，若相同則不重新渲染，提昇效能
+>>>>>>> kdchang/master
 shouldComponentUpdate (nextProps) {
     return this.props.value !== nextProps.value;
 }
@@ -212,9 +220,15 @@ shouldComponentUpdate (nextProps) {
 但当比较的是对象的话就会出现问题：
 
 ```javascript
+<<<<<<< HEAD
 // 假设 this.props.value 为 { foo: 'app' }
 // 架设 nextProps.value 为 { foo: 'app' },
 // 虽然两者值是一样，但由于 reference 位置不同，所以视为不同。但由于值一样应该要避免重复渲染
+=======
+// 假設 this.props.value 為 { foo: 'app' }
+// 假設 nextProps.value 為 { foo: 'app' },
+// 雖然兩者值是一樣，但由於 reference 位置不同，所以視為不同。但由於值一樣應該要避免重複渲染
+>>>>>>> kdchang/master
 this.props.value !== nextProps.value; // true
 ```
 

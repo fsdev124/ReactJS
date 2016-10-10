@@ -30,11 +30,13 @@ app.js，使用 ES6 Class Component 写法：
 
 ```javascript
 class HelloMessage extends React.Component {
+	// 若是需要綁定 this.方法或是需要在 constructor 使用 props，定義 state，就需要 constructor。若是在其他方法（如 render）使用 this.props 則不用一定要定義 constructor
 	constructor(props) {
 		// 对于 OOP 面向对象程序设计熟悉的读者应该对于 constructor 建构子的使用不陌生，事实上它是 ES6 的语法糖，骨子里还是 portotype based 面向对象程序语言。通过 extends 可以继承 React.Component 父类别。super 方法可以调用继承父类别的建构子
 		super(props);
 		this.state = {}
 	}
+	// render 是唯一必須的方法，但如果是單純 render UI 建議使用 Functional Component 寫法，效能較佳且較簡潔
 	render() {
 		return (
 			<div>Hello {this.props.name}</div>
@@ -55,7 +57,13 @@ HelloMessage.defaultProps = {
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
 ```
 
+<<<<<<< HEAD
 使用 Functional Component 写法：
+=======
+關於 React ES6 class constructor super() 解釋可以參考 [React ES6 class constructor super()](http://cheng.logdown.com/posts/2016/03/26/683329) 。
+
+使用 Functional Component 寫法：
+>>>>>>> kdchang/master
 
 ```javascript
 // Functional Component 可以视为 f(d) => UI，根据传进去的 props 绘出对应的 UI。注意这边 props 是传入函式的参数。因此取用 props 不用加 this
@@ -138,8 +146,15 @@ class Timer extends React.Component {
 ReactDOM.render(<Timer />, document.getElementById('app'));
 ```
 
+<<<<<<< HEAD
 ## 事件处理（Event Handle）
 在前面的内容我们已经学会如何使用 props 和 state，接下来我们要更进一步学习在 React 内如何进行事件处理。下列将使用 React 官网的 An Application 当做例子，实践出一个简单的 TodoApp。
+=======
+關於 Javascript this 用法可以參考 [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)。
+
+## 事件處理（Event Handle）
+在前面的內容我們已經學會如何使用 props 和 state，接下來我們要更進一步學習在 React 內如何進行事件處理。下列將使用 React 官網的 An Application 當做例子，實作出一個簡單的 TodoApp。
+>>>>>>> kdchang/master
 
 HTML Markup：
 
@@ -186,13 +201,13 @@ class TodoApp extends React.Component {
 		}
 	}
 	onChange(e) {
-    this.setState({text: e.target.value});		
+    	this.setState({text: e.target.value});		
 	}
 	handleSubmit(e) {
-    e.preventDefault();
-    const nextItems = this.state.items.concat([{text: this.state.text, id: Date.now()}]);
-    const nextText = '';
-    this.setState({items: nextItems, text: nextText});
+    	e.preventDefault();
+    	const nextItems = this.state.items.concat([{text: this.state.text, id: Date.now()}]);
+    	const nextText = '';
+    	this.setState({items: nextItems, text: nextText});
 	}
 	render() {
     return (
@@ -249,28 +264,37 @@ class MarkdownEditor extends React.Component {
 		}
 	}
 	handleChange() {
+<<<<<<< HEAD
     this.setState({value: this.refs.textarea.value});
 	}
 	// 将使用者输入的 Markdown 语法 parse 成 HTML 放入 DOM 中，React 通常使用 virtual DOM 作为和 DOM 沟通的中介，不建议直接由操作 DOM。故使用时的属性为 dangerouslySetInnerHTML
 	rawMarkup() {
     const md = new Remarkable();
     return { __html: md.render(this.state.value) };		
+=======
+	    this.setState({value: this.refs.textarea.value});
+		}
+		// 將使用者輸入的 Markdown 語法 parse 成 HTML 放入 DOM 中，React 通常使用 virtual DOM 作為和 DOM 溝通的中介，不建議直接由操作 DOM。故使用時的屬性為 dangerouslySetInnerHTML
+		rawMarkup() {
+	    const md = new Remarkable();
+	    return { __html: md.render(this.state.value) };		
+>>>>>>> kdchang/master
 	}
 	render() {
-    return (
-      <div className="MarkdownEditor">
-        <h3>Input</h3>
-        <textarea
-          onChange={this.handleChange}
-          ref="textarea"
-          defaultValue={this.state.value} />
-        <h3>Output</h3>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={this.rawMarkup()}
-        />
-      </div>
-    );	
+	    return (
+	      <div className="MarkdownEditor">
+	        <h3>Input</h3>
+	        <textarea
+	          onChange={this.handleChange}
+	          ref="textarea"
+	          defaultValue={this.state.value} />
+	        <h3>Output</h3>
+	        <div
+	          className="content"
+	          dangerouslySetInnerHTML={this.rawMarkup()}
+	        />
+	      </div>
+	    );	
 	}
 }
 
@@ -283,6 +307,7 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 ## 延伸阅读
 1. [React 官方网站](https://facebook.github.io/react/index.html)
 2. [Top-Level API](https://facebook.github.io/react/docs/top-level-api.html)
+3. [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
 ## :door: 任意门
 | [回首页](https://github.com/kdchang/reactjs101) | [上一章：JSX 简明入门教学指南](https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规格与生命周期（Life Cycle）](https://github.com/kdchang/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |

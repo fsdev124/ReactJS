@@ -3,7 +3,11 @@
 ![一看就懂的 React ES5、ES6+ 常见用法对照表](./images/react-es6.jpg)
 
 ## 前言
+<<<<<<< HEAD
 [React](https://facebook.github.io/react/) 是 Facebook 推出的开源 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) Library。自从 React 正式开源后，React 生态系开始蓬勃发展。事实上，透过学习 React 生态系（ecosystem），让我们顺便学习现代化 Web 开发的重要观念（例如：ES6、[Webpack](https://github.com/webpack/webpack)、[Babel](https://babeljs.io/)、组件化等），成为更好的开发者。虽然 ES6（ECMAScript2015）、ES7 是未来趋势（本文将 ES6、ES7 称为 ES6+），但是目前在网路上有许多的学习资源仍是以 ES5 为主，导致读者在学习上遇到一些坑洞和迷惑（本文假设读者对于 React 已经有些基本认识，若你对于 React 尚不熟悉，建议先行[阅读官方文件](https://facebook.github.io/react/)和[本篇入门教学](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)）。因此本文希望透过整理在 React 中 ES5、ES6+ 常见用法对照表，让读者们可以在实现功能时（尤其在 [React Native](https://facebook.github.io/react-native/)）可以更清楚两者的差异，无痛转移到 ES6+。
+=======
+[React](https://facebook.github.io/react/) 是 Facebook 推出的開源 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) Library。自從 React 正式開源後，React 生態系開始蓬勃發展。事實上，透過學習 React 生態系（ecosystem）的過程中，可以讓我們順便學習現代化 Web 開發的重要觀念（例如：ES6、[Webpack](https://github.com/webpack/webpack)、[Babel](https://babeljs.io/)、模組化等），成為更好的開發者。雖然 ES6（ECMAScript2015）、ES7 是未來趨勢（本文將 ES6、ES7 稱為 ES6+），然而目前在網路上有許多的學習資源仍是以 ES5 為主，導致讀者在學習上遇到一些坑洞和迷惑（本文假設讀者對於 React 已經有些基本認識，若你對於 React 尚不熟悉，建議先行[閱讀官方文件](https://facebook.github.io/react/)和[本篇入門教學](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)）。因此本文希望透過整理在 React 中 ES5、ES6+ 常見用法對照表，讓讀者們可以在實現功能時（尤其在 [React Native](https://facebook.github.io/react-native/)）可以更清楚兩者的差異，無痛轉移到 ES6+。
+>>>>>>> kdchang/master
 
 ## 大纲
 1. Modules
@@ -79,7 +83,11 @@ class Photo extends React.Component {
 ReactDOM.render(<Photo />, document.getElementById('main'));
 ```
 
+<<<<<<< HEAD
 在 ES5 我们会在 `componentWillMount ` 生命周期定义希望在 `render` 前执行，且只会执行一次的任务：
+=======
+在 ES5 我們會在 `componentWillMount ` 生命週期定義希望在 `render` 前執行，且只會執行一次的任務：
+>>>>>>> kdchang/master
 
 ```js
 var Photo = React.createClass({
@@ -179,7 +187,11 @@ Todo.propTypes = {
 
 
 ## 5. State
+<<<<<<< HEAD
 在 React 中 `Props` 和 `State` 是数据流传递的重要元素，不同的是 `state` 可更改，可以去执行一些运算。在 ES5 中我们使用 `getInitialState ` 去初始化 `state`：
+=======
+在 React 中 `Props` 和 `State` 是資料流傳遞的重要元素，不同的是 `state` 可更動，可以去執行一些運算。在 ES5 中我們使用 `getInitialState ` 去初始化 `state`：
+>>>>>>> kdchang/master
 
 ```js
 var Todo = React.createClass({
@@ -463,8 +475,13 @@ var link = function(height = 50, color = 'red') {
 }
 ```
 
+<<<<<<< HEAD
 ## 总结
 以上就是 React ES5、ES6+常见用法对照表，能看到这边的你应该已经对于 React ES5、ES6 使用上有些认识，先给自己一些掌声吧！确实从 ES6 开始，JavaScript 和以前我们看到的 JavaScript 有些不同，增加了许多新的特性，有些读者甚至会很怀疑说这真的是 JavaScript 吗？ES6 的用法对于初学者来说可能会需要写一点时间吸收，下一章我们将进到同样也是有革新性设计和有趣的 React Native，用 JavaScript 和 React 写 Native App！
+=======
+## 總結
+以上就是 React ES5、ES6+常見用法對照表，能看到這邊的你應該已經對於 React ES5、ES6 使用上有些認識，先給自己一些掌聲吧！確實從 ES6 開始，JavaScript 和以前我們看到的 JavaScript 有些不同，增加了許多新的特性，有些讀者甚至會很懷疑說這真的是 JavaScript 嗎？ES6 的用法對於初學者來說可能會需要寫一點時間吸收，下一章我們將進到同樣也是有革新性設計和有趣的 React Native，用 JavaScript 和 React 寫 Native App！
+>>>>>>> kdchang/master
 
 ## 延伸阅读
 1. [React/React Native 的ES5 ES6写法对照表](http://bbs.reactnative.cn/topic/15/react-react-native-%E7%9A%84es5-es6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7%E8%A1%A8)
