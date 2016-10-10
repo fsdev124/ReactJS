@@ -1,15 +1,15 @@
 # 用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站
 
 ## 前言
-如果你是从一开始跟着我们踏出 React 旅程的读者真的恭喜你，也谢谢你一路跟着我们的学习脚步，对一个初学者来说这一段路并不容易。本章是扣除附录外我们最后一个正式章节的范例，也是规模最大的一个，在这个章节中我们要整合过去所学和添加一些知识开发一个可以登入会员并分享食谱的社群网站，
+如果你是从一开始跟着我们踏出 React 旅程的读者真的恭喜你，也谢谢你一路跟着我们的学习脚步，对一个初学者来说这一段路并不容易。本章是扣除附录外我们最后一个正式章节的范例，也是规模最大的一个，在这个章节中我们要整合过去所学和添加一些知识开发一个可以登录会员并分享食谱的社群网站，
 Let's GO！
 
 ## 需求规划
-让使用者可以登入会员并分享食谱的社群网站
+让使用者可以登录会员并分享食谱的社群网站
 
 ## 功能规划
 1. React Router / Redux / Immutable / Server Render / Async API
-2. 使用者登入/登出（JSON Web Token）
+2. 使用者登录/登出（JSON Web Token）
 3. CRUD 表单资料处理
 4. 资料库串接(ORM/MongoDB)
 
@@ -358,7 +358,7 @@ const app = new Express();
 const apiRoutes = Express.Router();
 // 设定 JSON Web Token 的 secret variable
 app.set('superSecret', config.secret); // secret variable
-// 使用者登入 API ，依据使用 email 和 密码去验证，若成功则回传一个认证 token（时效24小时）我们把它存在 cookie 中，方便前后端存取。这边我们先不考虑太多信息安全的问题
+// 使用者登录 API ，依据使用 email 和 密码去验证，若成功则回传一个认证 token（时效24小时）我们把它存在 cookie 中，方便前后端存取。这边我们先不考虑太多信息安全的问题
 apiRoutes.post('/login', function(req, res) {
   // find the user
   User.findOne({
@@ -378,7 +378,7 @@ apiRoutes.post('/login', function(req, res) {
           expiresIn: 60 * 60 * 24 // expires in 24 hours
         });
         // return the information including token as JSON
-        // 若登入成功回传一个 json 讯息
+        // 若登录成功回传一个 json 讯息
         res.json({
           success: true,
           message: 'Enjoy your token!',
@@ -497,7 +497,7 @@ apiRoutes.delete('/recipes/:id', (req, res) => {
 export default apiRoutes;
 ```
 
-设定整个 App 的 routing，我们主要页面有 `HomePageContainer`、`LoginPageContainer`、`SharePageContainer`，值得注意的是我们这边使用 [Higher Order Components](http://www.darul.io/post/2016-01-05_react-higher-order-components) （Higher Order Components 为一个函数， 接收一个 Component 后在 Class Component 的 render 中 return 回传入的 components）方式去确认使用者是否有登入，若有没登入则不能进入分享食谱页面，反之若已登入也不会再进到登入页面：
+设定整个 App 的 routing，我们主要页面有 `HomePageContainer`、`LoginPageContainer`、`SharePageContainer`，值得注意的是我们这边使用 [Higher Order Components](http://www.darul.io/post/2016-01-05_react-higher-order-components) （Higher Order Components 为一个函数， 接收一个 Component 后在 Class Component 的 render 中 return 回传入的 components）方式去确认使用者是否有登录，若有没登录则不能进入分享食谱页面，反之若已登录也不会再进到登录页面：
 
 ```javascript
 import React from 'react';
@@ -574,7 +574,7 @@ export const hideSpinner = createAction('HIDE_SPINNER');
 export const setUi = createAction('SET_UI');
 ```
 
-设定 `src/actions/userActions.js`，处理使用者登入登出等行为：
+设定 `src/actions/userActions.js`，处理使用者登录登出等行为：
 
 ```javascript
 import { createAction } from 'redux-actions';
@@ -649,7 +649,7 @@ function getCookie(keyName) {
 }
 
 export default {
-  // 呼叫后端登入 api
+  // 呼叫后端登录 api
   login: (dispatch, email, password) => {
     axios.post('/api/login', {
       email: email,
@@ -683,7 +683,7 @@ export default {
     dispatch(hideSpinner());
     browserHistory.push('/');
   },
-  // 确认使用者是否登入
+  // 确认使用者是否登录
   checkAuth: (dispatch, token) => {
     axios.post('/api/authenticate', {
       token: token,
@@ -800,7 +800,7 @@ const recipeReducers = handleActions({
 export default recipeReducers;
 ```
 
-以下是 `src/common/reducers/data/userReducers.js`，负责确认登入相关处理事项。注意的是由于登入是非同步执行，所以会有几个阶段的行为要做处理：
+以下是 `src/common/reducers/data/userReducers.js`，负责确认登录相关处理事项。注意的是由于登录是非同步执行，所以会有几个阶段的行为要做处理：
 
 ```javascript
 import { handleActions } from 'redux-actions';
@@ -951,7 +951,7 @@ const AppBar = ({
         isAuthorized === false ?
         (
           <Nav pullRight>
-            <LinkContainer to={{ pathname: '/login' }}><NavItem eventKey={2} href="#">登入</NavItem></LinkContainer>
+            <LinkContainer to={{ pathname: '/login' }}><NavItem eventKey={2} href="#">登录</NavItem></LinkContainer>
           </Nav>
         ) :
         (
@@ -1018,7 +1018,7 @@ const Main = (props) => (
 export default Main;
 ```
 
- 在 `checkAuth` 这个 Component 中，我们使用到了 Higher Order Components 的观念。Higher Order Components 为一个函数， 接收一个 Component 后在 Class Component 的 render 中 return 回传入的 components 方式去确认使用者是否有登入，若有没登入则不能进入分享食谱页面，反之若已登入也不会再进到登入页面：
+ 在 `checkAuth` 这个 Component 中，我们使用到了 Higher Order Components 的观念。Higher Order Components 为一个函数， 接收一个 Component 后在 Class Component 的 render 中 return 回传入的 components 方式去确认使用者是否有登录，若有没登录则不能进入分享食谱页面，反之若已登录也不会再进到登录页面：
 
 ```javascript
 import React from 'react';
@@ -1242,7 +1242,7 @@ export default connect(
 
 ```
 
-真正设计我们内部的食谱， `src/common/components/RecipeBox`，使用者登入的话可以修改和删除食谱：
+真正设计我们内部的食谱， `src/common/components/RecipeBox`，使用者登录的话可以修改和删除食谱：
 
 ```javascript
 import React from 'react';
@@ -1316,7 +1316,7 @@ export default connect(
 ```
 
 
-设计我们分享食谱页面，这边我们把编辑食谱和新增分享一起共用了同一个 components，差别在于我们会判断 UI State 中的 `isEdit`， 决定相应处理方式。在中 `src/common/components/ShareBox/ShareBox.js`，可以让使用者登入的后修改和删除食谱：
+设计我们分享食谱页面，这边我们把编辑食谱和新增分享一起共用了同一个 components，差别在于我们会判断 UI State 中的 `isEdit`， 决定相应处理方式。在中 `src/common/components/ShareBox/ShareBox.js`，可以让使用者登录的后修改和删除食谱：
 
 
 ```javascript
@@ -1474,7 +1474,7 @@ export default connect(
 ![用 React + Redux + Node（Isomorphic）开发一个食谱分享网站](./images/open-cook-demo-1.png "用 React + Redux + Node（Isomorphic）开发一个食谱分享网站")
 
 ## 总结
-本章整合过去所学和添加一些后端资料库知识开发了一个可以登入会员并分享食谱的社群网站！快把你的成果和你的朋友分享吧！觉得意犹未尽？别忘了附录也很精采！最后，再次谢谢读者们支持我们一路走完了 React 开发学习之旅！然而前端技术变化很快，唯有不断自我学习才能持续成长。笔者才疏学浅，撰写学习心得或有疏漏，若有任何建议或提醒都欢迎和我说，大家一起加油：）
+本章整合过去所学和添加一些后端资料库知识开发了一个可以登录会员并分享食谱的社群网站！快把你的成果和你的朋友分享吧！觉得意犹未尽？别忘了附录也很精采！最后，再次谢谢读者们支持我们一路走完了 React 开发学习之旅！然而前端技术变化很快，唯有不断自我学习才能持续成长。笔者才疏学浅，撰写学习心得或有疏漏，若有任何建议或提醒都欢迎和我说，大家一起加油：）
 
 ## 延伸阅读
 1. [joshgeller/react-redux-jwt-auth-example](https://github.com/joshgeller/react-redux-jwt-auth-example)
