@@ -18,13 +18,7 @@
 8. Roboto Font from Google Font
 9. Github API（https://api.github.com/users/torvalds）
 
-<<<<<<< HEAD
 ## 项目成果截屏
-=======
-不過要注意的是 Github API 若沒有使用 App key 的話可以呼叫 API 的次數會受限
-
-## 專案成果截圖
->>>>>>> kdchang/master
 
 ![React Redux](./images/demo-1.png "React Redux")
 
@@ -259,7 +253,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 
 	接下来我们要来设置一下 Reducers 和 models（initialState 格式）的设计，注意我们这个范例都是使用 `ImmutableJS`。以下是 `src/constants/models.js`：
 
-	```javascript
+	```
 	import Immutable from 'immutable';
 
 	export const UiState = Immutable.fromJS({
@@ -562,4 +556,4 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 ## :door: 任意门
 | [回首页](https://github.com/kdchang/reactjs101) | [上一章：Container 与 Presentational Components 入门](https://github.com/kdchang/reactjs101/blob/master/Ch08/container-presentational-component-.md) | [下一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/kdchang/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) |
 
-| [勘误、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

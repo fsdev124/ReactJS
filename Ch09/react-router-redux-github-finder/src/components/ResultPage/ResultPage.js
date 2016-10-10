@@ -1,15 +1,10 @@
 import React from 'react';
-import GithubBox from '../../components/GithubBox';
+import GithubBoxContainer from '../../containers/GithubBoxContainer';
 
-const ResultPage = props => (
-  <div>
-    <GithubBox data={props.data} userId={props.location.query.userId} />
+const ResultPage = (props) => (
+  <div> 
+    <GithubBoxContainer data={props.data} userId={props.location.query.userId} />  
   </div>
 );
-
-ResultPage.propTypes = {
-  data: React.PropTypes.string,
-  location: React.PropTypes.Object,
-};
 
 export default ResultPage;
