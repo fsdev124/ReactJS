@@ -22,6 +22,6 @@
 （image via [bsdacademy](http://bsdacademy.com/wp-content/uploads/2014/10/html-css-js.png)、[firebase](https://www.firebase.com/resources/images/website/logos/frameworks.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [下一章：React 生态系（Ecosystem）入门简介](https://github.com/kdchang/reactjs101/blob/master/Ch01/react-ecosystem-introduction.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [下一章：React 生态系（Ecosystem）入门简介](https://github.com/blueflylin/reactjs101/blob/master/Ch01/react-ecosystem-introduction.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

@@ -3,11 +3,7 @@
 ![JSX 简明入门教学指南](./images/reactjs.png)
 
 ## 前言
-<<<<<<< HEAD
 根据 [React](https://facebook.github.io/react/) 官方定义，React 是一个构建使用者介面的 JavaScritp Library。以 MVC 模式来说，ReactJS 主要是负责 View 的部份。过去一段时间，我们被灌输了许多前端分离的观念，在前端三兄弟中（或三姊妹、三剑客）：HTML 掌管内容结构、CSS 负责外观样式，JavaScript 主管逻辑互动，千万不要混在一块。然而，在 React 世界里，所有事物都是 以 Component 为基础，将同一个 Compoent 相关的程序和资源都放在一起，而在编写 React Component 时我们通常会使用 [JSX](https://facebook.github.io/jsx/) 的方式来提升程序编写效率。事实上，JSX 并非一种全新的语言，而是一种语法糖（[Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)），一种语法类似 [XML](https://zh.wikipedia.org/wiki/XML) 的 ECMAScript 语法扩充。在 JSX 中 HTML 和组建这些元素标签的代码有紧密的关系。因此你可能要熟悉一下以 Component 为单位的思考方式（本文主要使用 ES6 语法）。
-=======
-根據 [React](https://facebook.github.io/react/) 官方定義，React 是一個構建使用者介面的 JavaScritp Library。以 MVC 模式來說，ReactJS 主要是負責 View 的部份。過去一段時間，我們被灌輸了許多前端分離的觀念，在前端三兄弟中（或三姊妹、三劍客）：HTML 掌管內容結構、CSS 負責外觀樣式，JavaScript 主管邏輯互動，千萬不要混在一塊。然而，在 React 世界裡，所有事物都是 以 Component 為基礎，將同一個 Component 相關的程式和資源都放在一起，而在撰寫 React Component 時我們通常會使用 [JSX](https://facebook.github.io/jsx/) 的方式來提升程式撰寫效率。事實上，JSX 並非一種全新的語言，而是一種語法糖（[Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)），一種語法類似 [XML](https://zh.wikipedia.org/wiki/XML) 的 ECMAScript 語法擴充。在 JSX 中 HTML 和組建這些元素標籤的程式碼有緊密的關係。因此你可能要熟悉一下以 Component 為單位的思考方式（本文主要使用 ES6 語法）。
->>>>>>> kdchang/master
 
 此外，React 和 JSX 的思维在于善用 JavaScript 的强大能力，放弃蹩脚的模版语言，这和 [Angular](https://angularjs.org/) 强化 HTML 的理念也有所不同。当然 JSX 并非强制使用，你也可以选择不用，因为最终 JSX 的内容会转化成 JavaScript（浏览器只看的懂 JavaScript）。不过等你阅读完接下来的内容，你或许会开始发现 JSX 的好，认真考虑使用 JSX 的语法。
 
@@ -129,7 +125,7 @@ class HelloMessage extends React.Component {
 </html>
 ```
 
-一般载入 JSX 方式有：
+一般加载 JSX 方式有：
 
 - 内嵌
 
@@ -290,13 +286,8 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 <HelloMessage onClick={this.onBtn} />
 ```
 
-<<<<<<< HEAD
 ## 总结
 以上就是 JSX 简明入门教学，希望通过以上介绍，让读者了解在 React 中为何要使用 JSX，以及 JSX 基本概念和用法。最后为大家复习一下：在 React 世界里，所有事物都是以 Component 为基础，通常会将同一个 Compoent 相关的程序和资源都放在一起，而在编写 React Component 时我们常会使用 [JSX](https://facebook.github.io/jsx/) 的方式来提升程序编写效率。JSX 是一种语法类似 XML 的 ECMAScript 语法扩充，可以善用 JavaScript 的强大能力，放弃蹩脚的模版语言。当然 JSX 并非强制使用，你也可以选择不用，因为最终 JSX 的内容会转化成 JavaScript。当相信阅读完上述的内容后，你会开始认真考虑使用 JSX 的语法。
-=======
-## 總結
-以上就是 JSX 簡明入門教學，希望透過以上介紹，讓讀者了解在 React 中為何要使用 JSX，以及 JSX 基本概念和用法。最後為大家複習一下：在 React 世界裡，所有事物都是以 Component 為基礎，通常會將同一個 Component 相關的程式和資源都放在一起，而在撰寫 React Component 時我們常會使用 [JSX](https://facebook.github.io/jsx/) 的方式來提升程式撰寫效率。JSX 是一種語法類似 XML 的 ECMAScript 語法擴充，可以善用 JavaScript 的強大能力，放棄蹩腳的模版語言。當然 JSX 並非強制使用，你也可以選擇不用，因為最終 JSX 的內容會轉化成 JavaScript。當相信閱讀完上述的內容後，你會開始認真考慮使用 JSX 的語法。
->>>>>>> kdchang/master
 
 ## 延伸阅读
 1. [Imperative programming or declarative programming](http://www.puritys.me/docs-blog/article-320-Imperative-programming-or-declarative-programming.html)
@@ -306,6 +297,6 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 （image via [adweek](http://www.adweek.com/socialtimes/files/2014/05/LikeButtoniOSApps650.jpg), [codecondo](http://codecondo.com/wp-content/uploads/2015/12/Useful-Features-of-React_7851.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：ReactJS 与 Component 设计入门介绍](https://github.com/kdchang/reactjs101/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 与表单处理](https://github.com/kdchang/reactjs101/blob/master/Ch04/props-state-introduction.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：ReactJS 与 Component 设计入门介绍](https://github.com/blueflylin/reactjs101/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 与表单处理](https://github.com/blueflylin/reactjs101/blob/master/Ch04/props-state-introduction.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

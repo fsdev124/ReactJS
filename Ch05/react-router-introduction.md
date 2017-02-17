@@ -280,6 +280,6 @@ export default Repos;
 （iamge via [seanamarasinghe](http://seanamarasinghe.com/wp-content/uploads/2016/01/react-router-1050x360.jpg)）
 
 ## 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：React Component 规格与生命周期（Life Cycle）](https://github.com/kdchang/reactjs101/blob/master/Ch04/react-component-life-cycle.md) | [下一章：ImmutableJS 入门教学](https://github.com/kdchang/reactjs101/blob/master/Ch06/react-immutable-introduction.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Component 规格与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) | [下一章：ImmutableJS 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch06/react-immutable-introduction.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

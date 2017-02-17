@@ -18,13 +18,9 @@
 8. Roboto Font from Google Font
 9. Github API（https://api.github.com/users/torvalds）
 
-<<<<<<< HEAD
-## 项目成果截屏
-=======
-不過要注意的是 Github API 若沒有使用 App key 的話可以呼叫 API 的次數會受限
+不过要注意的是 Github API 若没有使用 App key 的话可以调用 API 的次数会受限
 
-## 專案成果截圖
->>>>>>> kdchang/master
+## 项目成果截屏
 
 ![React Redux](./images/demo-1.png "React Redux")
 
@@ -475,7 +471,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	      </CardText>
 	      <CardActions>
 	        <Link to="/">
-	          <RaisedButton 
+	          <RaisedButton
 	            label="Back" 
 	            icon={<ActionHome />}
 	            secondary={true} 
@@ -560,6 +556,6 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 9. [传统 Ajax 已死，Fetch 永生](https://github.com/camsong/blog/issues/2)
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：Container 与 Presentational Components 入门](https://github.com/kdchang/reactjs101/blob/master/Ch08/container-presentational-component-.md) | [下一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/kdchang/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Container 与 Presentational Components 入门](https://github.com/blueflylin/reactjs101/blob/master/Ch08/container-presentational-component-.md) | [下一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

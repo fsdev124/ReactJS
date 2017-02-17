@@ -91,11 +91,7 @@ store.dispatch({ type: 'DECREMENT' });
 
 1. createStore：`createStore(reducer, [preloadedState], [enhancer])`
 
-<<<<<<< HEAD
 	我们知道在 Redux 中只会有一个 store。在产生 store 时我们会使用 `createStore` 这个 API 来创建 store。第一个参数放入我们的 `reducer` 或是有多个 `reducers` combine（使用 `combineReducers`）在一起的 `rootRuducers`。第二个参数我们会放入希望预先载入的 `state` 例如：user session 等。第三个参数通常会放入我们想要使用用来增强 Redux 功能的 `middlewares`，若有多个 `middlewares` 的话，通常会使用 `applyMiddleware` 来整合。
-=======
-	我們知道在 Redux 中只會有一個 store。在產生 store 時我們會使用 `createStore` 這個 API 來創建 store。第一個參數放入我們的 `reducer` 或是有多個 `reducers` combine（使用 `combineReducers`）在一起的 `rootReducers`。第二個參數我們會放入希望預先載入的 `state` 例如：user session 等。第三個參數通常會放入我們想要使用用來增強 Redux 功能的 `middlewares`，若有多個 `middlewares` 的話，通常會使用 `applyMiddleware` 來整合。
->>>>>>> kdchang/master
 
 2. Store
 
@@ -106,11 +102,7 @@ store.dispatch({ type: 'DECREMENT' });
 	- subscribe(listener)
 	- replaceReducer(nextReducer)
 
-<<<<<<< HEAD
 	关于 Store 重点是要知道 Redux 只有一个 Sotre 负责存放整个 App 的 State，而唯一能改变 State 的方法只有发送 action。
-=======
-	關於 Store 重點是要知道 Redux 只有一個 Store 負責存放整個 App 的 State，而唯一能改變 State 的方法只有發送 action。
->>>>>>> kdchang/master
 
 3. combineReducers：`combineReducers(reducers)`
 
@@ -121,7 +113,7 @@ store.dispatch({ type: 'DECREMENT' });
 	官方针对 Middleware 进行说明
 	> It provides a third-party extension point between dispatching an
 	action, and the moment it reaches the reducer.
-		
+
 	若有 NodeJS 的经验的读者，对于 middleware 概念应该不陌生，让开发者可以在 req 和 res 之间进行一些操作。在 Redux 中 Middleware 则是扮演 action 到达 reducer 前的第三方扩充。而 applyMiddleware 可以将多个 `middlewares` 整合并回传一个 Function，便于使用。
 
 	若是你要使用 asynchronous（非同步）的行为的话需要使用其中一种 middleware： [redux-thunk](https://github.com/gaearon/redux-thunk)、[redux-promise](https://github.com/acdlite/redux-promise) 或 [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware) ，这样可以让你在 actions 中 dispatch Promises 而非 function。asynchronous（非同步）运作方式就如同下图所示：
@@ -133,7 +125,7 @@ store.dispatch({ type: 'DECREMENT' });
 	bindActionCreators 可以将 `actionCreators` 和 `dispatch` 绑定，并回传一个 Function 或 Object，让程序更简洁。但若是使用 react-redux 可以用 `connect` 让 dispatch 行为更容易管理
 
 6. compose：`compose(...functions)`
-	
+
 	compose 可以将 function 由右到左合并并回传一个 Function，如官网范例所示：
 
 	```
@@ -164,6 +156,6 @@ store.dispatch({ type: 'DECREMENT' });
 （image via [githubusercontent](https://raw.githubusercontent.com/reactjs/redux/master/logo/logo-title-dark.png)、[makeitopen](http://makeitopen.com/static/images/redux_flowchart.png)、[css-tricks](https://css-tricks.com/wp-content/uploads/2016/03/redux-article-3-03.svg)、[tighten](https://blog.tighten.co/assets/img/react-redux-diagram.png)、[tryolabs](http://blog.tryolabs.com/wp-content/uploads/2016/04/redux-simple-f8-diagram.png)、[facebook](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)、[JonasOhlsson](http://www.slideshare.net/JonasOhlsson/using-redux)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：Flux 基础概念与实战入门](https://github.com/kdchang/reactjs101/blob/master/Ch07/react-flux-introduction.md) | [下一章：Redux 实战入门](https://github.com/kdchang/reactjs101/blob/master/Ch07/react-redux-real-world-example.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Flux 基础概念与实战入门](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-flux-introduction.md) | [下一章：Redux 实战入门](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-redux-real-world-example.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

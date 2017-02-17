@@ -51,7 +51,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 </html>
 ```
 
-在撰写 `src/index.js` 之前，我们先说明整合 `react-redux` 的用法。从以下这张图可以看到 `react-redux` 是 React 和 Redux 间的桥梁，使用 `Provider`、`connect` 去连结 `store` 和 React View。
+在编写 `src/index.js` 之前，我们先说明整合 `react-redux` 的用法。从以下这张图可以看到 `react-redux` 是 React 和 Redux 间的桥梁，使用 `Provider`、`connect` 去连结 `store` 和 React View。
 
 ![React Redux](./images/using-redux.jpg "React Redux")
 
@@ -355,6 +355,6 @@ export default TodoList;
 （image via [JonasOhlsson](http://www.slideshare.net/JonasOhlsson/using-redux)、[licdn](https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAUQAAAAJDAyMWU1MmZhLTYzMTQtNDJkNy1hYzM4LTE5MWQzNWM1ODcyNA.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：Redux 基础概念](https://github.com/kdchang/reactjs101/blob/master/Ch07/react-redux-real-world-example.md) | [下一章：Container 与 Presentational Components 入门](https://github.com/kdchang/reactjs101/blob/master/Ch08/container-presentational-component-.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Redux 基础概念](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-redux-real-world-example.md) | [下一章：Container 与 Presentational Components 入门](https://github.com/blueflylin/reactjs101/blob/master/Ch08/container-presentational-component-.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
