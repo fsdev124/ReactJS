@@ -57,13 +57,9 @@ HelloMessage.defaultProps = {
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
 ```
 
-<<<<<<< HEAD
-使用 Functional Component 写法：
-=======
-關於 React ES6 class constructor super() 解釋可以參考 [React ES6 class constructor super()](http://cheng.logdown.com/posts/2016/03/26/683329) 。
+关于 React ES6 class constructor super() 解释可以参考 [React ES6 class constructor super()](http://cheng.logdown.com/posts/2016/03/26/683329) 。
 
-使用 Functional Component 寫法：
->>>>>>> kdchang/master
+使用 Functional Component 写法：
 
 ```javascript
 // Functional Component 可以视为 f(d) => UI，根据传进去的 props 绘出对应的 UI。注意这边 props 是传入函式的参数。因此取用 props 不用加 this
@@ -146,15 +142,8 @@ class Timer extends React.Component {
 ReactDOM.render(<Timer />, document.getElementById('app'));
 ```
 
-<<<<<<< HEAD
 ## 事件处理（Event Handle）
 在前面的内容我们已经学会如何使用 props 和 state，接下来我们要更进一步学习在 React 内如何进行事件处理。下列将使用 React 官网的 An Application 当做例子，实践出一个简单的 TodoApp。
-=======
-關於 Javascript this 用法可以參考 [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)。
-
-## 事件處理（Event Handle）
-在前面的內容我們已經學會如何使用 props 和 state，接下來我們要更進一步學習在 React 內如何進行事件處理。下列將使用 React 官網的 An Application 當做例子，實作出一個簡單的 TodoApp。
->>>>>>> kdchang/master
 
 HTML Markup：
 
@@ -201,7 +190,7 @@ class TodoApp extends React.Component {
 		}
 	}
 	onChange(e) {
-    	this.setState({text: e.target.value});		
+    	this.setState({text: e.target.value});
 	}
 	handleSubmit(e) {
     	e.preventDefault();
@@ -264,21 +253,12 @@ class MarkdownEditor extends React.Component {
 		}
 	}
 	handleChange() {
-<<<<<<< HEAD
-    this.setState({value: this.refs.textarea.value});
+        this.setState({value: this.refs.textarea.value});
 	}
 	// 将使用者输入的 Markdown 语法 parse 成 HTML 放入 DOM 中，React 通常使用 virtual DOM 作为和 DOM 沟通的中介，不建议直接由操作 DOM。故使用时的属性为 dangerouslySetInnerHTML
 	rawMarkup() {
-    const md = new Remarkable();
-    return { __html: md.render(this.state.value) };		
-=======
-	    this.setState({value: this.refs.textarea.value});
-		}
-		// 將使用者輸入的 Markdown 語法 parse 成 HTML 放入 DOM 中，React 通常使用 virtual DOM 作為和 DOM 溝通的中介，不建議直接由操作 DOM。故使用時的屬性為 dangerouslySetInnerHTML
-		rawMarkup() {
-	    const md = new Remarkable();
-	    return { __html: md.render(this.state.value) };		
->>>>>>> kdchang/master
+        const md = new Remarkable();
+        return { __html: md.render(this.state.value) };
 	}
 	render() {
 	    return (
@@ -294,7 +274,7 @@ class MarkdownEditor extends React.Component {
 	          dangerouslySetInnerHTML={this.rawMarkup()}
 	        />
 	      </div>
-	    );	
+	    );
 	}
 }
 
@@ -310,6 +290,6 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 3. [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：JSX 简明入门教学指南](https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规格与生命周期（Life Cycle）](https://github.com/kdchang/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：JSX 简明入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规格与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

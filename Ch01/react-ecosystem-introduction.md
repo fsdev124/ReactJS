@@ -118,6 +118,6 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 （image via [jpsierens](http://jpsierens.com/wp-content/uploads/2016/06/react-eco-wp.gif)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：Web 前端工程入门简介](https://github.com/kdchang/reactjs101/blob/master/Ch01/front-end-introduction.md) | [下一章：React 开发环境设置与 Webpack 入门教学](https://github.com/kdchang/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Web 前端工程入门简介](https://github.com/blueflylin/reactjs101/blob/master/Ch01/front-end-introduction.md) | [下一章：React 开发环境设置与 Webpack 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |

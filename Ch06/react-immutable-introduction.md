@@ -71,12 +71,8 @@ ImmutableJS 提供了 7 种不可修改的数据类型：`List`、`Map`、`Stack
 
   ```javascript
   const List= Immutable.List;
-  
-<<<<<<< HEAD
+
   // 1. 取得 List 长度
-=======
-  // 1. 取得 List 長度
->>>>>>> kdchang/master
   const arr1 = List([1, 2, 3]);
   arr1.size
   // => 3
@@ -111,7 +107,7 @@ ImmutableJS 提供了 7 种不可修改的数据类型：`List`、`Map`、`Stack
 
   ```javascript
   const Set= Immutable.Set;
-  
+
   // 1. 建立 Set
   const set1 = Set([1, 2, 3]);
   // => Set { 1, 2, 3 }
@@ -207,11 +203,7 @@ ImmutableJS 提供了 7 种不可修改的数据类型：`List`、`Map`、`Stack
 传统 JavaScript 比较方式，若数据型态为 Primitive 就不会有问题：
 
 ```javascript
-<<<<<<< HEAD
 // 在 shouldComponentUpdate 比较接下来的 props 一否一致，若相同则不重新渲染，提升性能
-=======
-// 在 shouldComponentUpdate 比較接下來的 props 是否一致，若相同則不重新渲染，提昇效能
->>>>>>> kdchang/master
 shouldComponentUpdate (nextProps) {
     return this.props.value !== nextProps.value;
 }
@@ -220,15 +212,9 @@ shouldComponentUpdate (nextProps) {
 但当比较的是对象的话就会出现问题：
 
 ```javascript
-<<<<<<< HEAD
 // 假设 this.props.value 为 { foo: 'app' }
 // 架设 nextProps.value 为 { foo: 'app' },
 // 虽然两者值是一样，但由于 reference 位置不同，所以视为不同。但由于值一样应该要避免重复渲染
-=======
-// 假設 this.props.value 為 { foo: 'app' }
-// 假設 nextProps.value 為 { foo: 'app' },
-// 雖然兩者值是一樣，但由於 reference 位置不同，所以視為不同。但由於值一樣應該要避免重複渲染
->>>>>>> kdchang/master
 this.props.value !== nextProps.value; // true
 ```
 
@@ -273,6 +259,6 @@ class FooComponent extends React.Component {
 （image via [risingstack](https://risingstack-blog.s3.amazonaws.com/2016/Jan/immutable_logo_for_react_js_best_practices-1453211749818.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/kdchang/reactjs101) | [上一章：React Router 入门实战教学](https://github.com/kdchang/reactjs101/blob/master/Ch05/react-router-introduction.md) | [下一章：Flux 基础概念与实战入门](https://github.com/kdchang/reactjs101/blob/master/Ch07/react-flux-introduction.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Router 入门实战教学](https://github.com/blueflylin/reactjs101/blob/master/Ch05/react-router-introduction.md) | [下一章：Flux 基础概念与实战入门](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-flux-introduction.md) |
 
 | [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
