@@ -13,11 +13,11 @@ GraphQL 的出现主要是为了要解决 Web/Mobile 端不断增加的 API 请�
 
 GraphQL 主要由以下组件构成：
 
-类别系统（Type System）
-查询语言（Query Language）：在 Operations 中 query 只读取数据而 mutation 写入操作
-执行语意（Execution Semantics）
-静态验证（Static Validation）
-类别检查（Type Introspection）
+1. 类别系统（Type System）
+2. 查询语言（Query Language）：在 Operations 中 query 只读取数据而 mutation 写入操作
+3. 执行语意（Execution Semantics）
+4. 静态验证（Static Validation）
+5. 类别检查（Type Introspection）
 
 一般 RESTful 在取用资源时会对应到 HTTP 中 `GET`、`POST`、`DELETE`、`PUT` 等方法，并以 URL 对应的方式去取得资源，例如：
 
