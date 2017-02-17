@@ -17,7 +17,7 @@ NPM（Node Package Manager）是 Node.js 下的主流包管理工具。在 NPM �
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) 系指 ES6（ES2015）和 ES7 的联集，在 ES6+ 新的标准当中引入许多新的特性和功能，弥补了过去 JavaScript 被诟病的一些特性。由于未来 React 将以支持 ES6+ 为主，因此直接学习 ES6+ 用法是相对好的选择，本书的所有范例也将会以 ES6+ 编写。
 
 ## Babel
-由于并非所有浏览器都支持 ES6+ 语法，所以通过 [Babel](https://babeljs.io/) 这个 JavaScript 编译器（可以想成是翻译机）可以让你的 ES6+ 、JSX 等程序码转换成浏览器可以看的懂得语法。通常会在数据夹的 root 位置加入 `.bablerc` 进行转译规则 `preset` 和引用外挂（plugin）的设定。
+由于并非所有浏览器都支持 ES6+ 语法，所以通过 [Babel](https://babeljs.io/) 这个 JavaScript 编译器（可以想成是翻译机）可以让你的 ES6+ 、JSX 等程序码转换成浏览器可以看的懂得语法。通常会在数据夹的 root 位置加入 `.babelrc` 进行转译规则 `preset` 和引用外挂（plugin）的设定。
 
 ## JavaScript 模块化开发
 随著 Web 应用程序的复杂性提高，JavaScript 模块化开发已经成为必然的趋势，以下简单介绍 JavaScript 模块化的相关规范。事实上，在一开始没有官方定义的标准时出现了各种社群自行定义的规范和实践。
