@@ -220,7 +220,7 @@ ReactDOM.render(<TodoApp />, document.getElementById('app'));
 ## Refs 与表单处理
 上面介绍了 props（传入后就不能修改）、state（随著使用者互动而改变）和事件处理机制后，我们将接续介绍如何在 React 中进行表单处理。同样我们使用 React 官网范例 A Component Using External Plugins 进行介绍。由于 React 可以容易整合外部的 libraries（例如：jQuery），本范例将使用 `remarkable` 结合 `ref` 属性取出 DOM Value 值（另外比较常用的作法是使用 `onChange` 事件处理方式处理表单内容），让使用者可以使用 Markdown 语法的所见即所得编辑器（editor）。
 
-HTML Markup（记得除了引入 `react` 和 `react-dom` 外还要用 `CDN` 方式引入 `remarkable` 这个 `Markdown` 语法 parser 套件）：
+HTML Markup (除了引入 `react` 、 `react-dom` 还要用 `CDN` 方式引入 `remarkable` 这个 `Markdown` 语法 parser 套件，记得如果没有使用 Webpack 或是 browserify + babelify 等工具需要引入 `babel-standalone` 浏览器解析 ES6 读法并引入 script 加上 type="text/babel")：
 
 ```html
 <!DOCTYPE html>
@@ -235,7 +235,7 @@ HTML Markup（记得除了引入 `react` 和 `react-dom` 外还要用 `CDN` 方�
 <script src="https://fb.me/react-dom-15.1.0.js"></script>
 <script src="https://cdn.jsdelivr.net/remarkable/1.6.2/remarkable.min.js"></script>
   <div id="app"></div>
-	<script src="./app.js"></script>
+	<script type="text/babel" src="./app.js"></script>
 </body>
 </html>
 ```

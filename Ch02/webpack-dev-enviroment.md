@@ -22,7 +22,7 @@
 以下是 React [官方首页的范例](https://facebook.github.io/react/index.html)，以下使用 `React v15.2.1`：
 
 1. 理解 `React` 是 `Component` 导向的应用程式设计
-2. 引入 `react.js`、`react-dom.js`（react 0.14 后将 react-dom 从 react 核心分离，更符合 react 跨平台抽象化的定位）以及 `babel-core-browser` 版 script（可以想成 `babel` 是翻译机，翻译浏览器看不懂的 `JSX` 或 `ES6+` 语法成为浏览器看的懂得的 `JavaScript`。为了提升效率，通常我们都会在伺服器端做转译，这点在 production 环境尤为重要）
+2. 引入 `react.js`、`react-dom.js`（react 0.14 后将 react-dom 从 react 核心分离，更符合 react 跨平台抽象化的定位）以及 `babel-standalone` 版 script（可以想成 `babel` 是翻译机，翻译浏览器看不懂的 `JSX` 或 `ES6+` 语法成为浏览器看的懂得的 `JavaScript`。为了提升效率，通常我们都会在伺服器端做转译，这点在 production 环境尤为重要）
 3. 在 `<body>` 编写 React Component 要插入（mount）指定节点的地方：`<div id="example"></div>`
 4. 通过 `babel` 进行语言翻译 `React JSX` 语法，`babel` 会将其转为浏览器看的懂得 `JavaScript`。其代表意义是：`ReactDOM.render(想要 render 的 Component 或 HTML 元素, 想要插入的位置)`。所以我们可以在浏览器上打开我们的 `hello.html`，就可以看到 `Hello, world!` 。That's it，我们第一个 `React` 应用程式就算完成了！
 
@@ -35,7 +35,7 @@
     <!-- 以下引入 react.js, react-dom.js（react 0.14 后将 react-dom 从 react 核心分离，更符合 react 跨平台抽象化的定位）以及 babel-core browser 版 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
   </head>
   <body>
     <!-- 这边的 id="example" 的 <div> 为 React Component 要插入的地方 -->
@@ -107,11 +107,7 @@
 	    filename: 'index_bundle.js',
 	  },
 	  module: {
-<<<<<<< HEAD
-	  	// loaders 则是放想要使用的 loaders，在这边是使用 babel-loader 将所有 .js（这边用到正则式）相关档案（排除了 npm 安装的套件位置 node_modules）转译成浏览器可以阅读的 JavaScript。preset 则是使用的 babel 转译规则，这边使用 react、es2015
-=======
-	  	// loaders 則是放欲使用的 loaders，在這邊是使用 babel-loader 將所有 .js（這邊用到正則式）相關檔案（排除了 npm 安裝的套件位置 node_modules）轉譯成瀏覽器可以閱讀的 JavaScript。preset 則是使用的 babel 轉譯規則，這邊使用 react、es2015。若是已經單獨使用 .babelrc 作為 presets 設定的話，則可以省略 query
->>>>>>> kdchang/master
+	  	// loaders 則是放想要使用的 loaders，在这边是使用 babel-loader 将所有 .js（这边用到正则）相关文件（排除了 npm 安裝的套件位置 node_modules）编译成浏览器可以阅读的 JavaScript。preset 则是使用的 babel 编译规则，这边使用 react、es2015。若是已经单独使用 .babelrc 作为 presets 設定的话，则可以省略 query
 	    loaders: [
 	      {
 	        test: /\.js$/,
@@ -151,11 +147,8 @@
 	$ npm install --save react react-dom
 	```
 
-<<<<<<< HEAD
 6. 编写 Component（记得把 `index.html` 以及 `index.js` 放到 `app` 文件夹底下喔！）
-=======
-6. 撰寫 Component（記得把 `index.html` 以及 `index.js` 放到 `app` 資料夾底下喔！）
->>>>>>> kdchang/master
+
 	`index.html`
 
 	```html 
