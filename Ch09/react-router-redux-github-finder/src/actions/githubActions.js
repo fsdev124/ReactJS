@@ -13,7 +13,7 @@ import {
 
 export const getGithub = (userId = 'torvalds') => {
   console.log('github action');
-  return (dispatch) => {
+  (dispatch) => {
     dispatch({ type: GET_GITHUB_INITIATE });
     dispatch(showSpinner());
     fetch(`https://api.github.com/users/${userId}`)
