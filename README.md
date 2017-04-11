@@ -30,7 +30,7 @@
 - [X] [八、Container 与 Presentational Components](https://github.com/blueflylin/reactjs101/tree/master/Ch08)
 - [X] [九、实战教学：用 React + Router + Redux + ImmutableJS 写一个 Github 查询应用](https://github.com/blueflylin/reactjs101/tree/master/Ch09)
 - [X] [十、实战教学：用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站](https://github.com/blueflylin/reactjs101/tree/master/Ch10)
-- [X] [附录一、React ES5、ES6+ 常见用法对照表](https://github.com/blueflylin/tree/master/Appendix01)
+- [X] [附录一、React ES5、ES6+ 常见用法对照表](https://github.com/blueflylin/reactjs101/tree/master/Appendix01)
 - [X] [附录二、用 React Native + Firebase 开发跨平台行动应用程序（Native Mobile App）](https://github.com/blueflylin/reactjs101/tree/master/Appendix02)
 - [X] [附录三、React 测试入门教学](https://github.com/blueflylin/reactjs101/tree/master/Appendix03)
 - [X] [附录四、GraphQL/Relay 初体验](https://github.com/blueflylin/reactjs101/tree/master/Appendix04)
