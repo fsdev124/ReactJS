@@ -62,17 +62,10 @@ React 原本是 Facebook 自己内部使用的开发工具，但却是一个目�
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
-<<<<<<< HEAD
 2. 使用 Funtional Component 写法（单纯地 render UI 的 stateless components，没有内部状态、没有实作物件和 ref，没有生命周期函数。若非需要控制生命周期的话建议多使用 stateless components 获得比较好的性能）
 
 	```javascript
 	// 使用 arror function 来设计 Funtional Component 让 UI 设计更单纯（f(D) => UI），减少副作用（side effect）
-=======
-2. 使用 Functional Component 寫法（單純地 render UI 的 stateless components，沒有內部狀態、沒有實作物件和 ref，沒有生命週期函數。若非需要控制生命週期的話建議多使用 stateless components 獲得比較好的效能）
-
-	```javascript
-	// 使用 arrow function 來設計 Functional Component 讓 UI 設計更單純（f(D) => UI），減少副作用（side effect）
->>>>>>> kdchang/master
 	const MyComponent = () => (
 		<div>Hello, World!</div>
 	);
