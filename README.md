@@ -16,7 +16,7 @@
 1. [简体中文版本 by @carlleton](https://github.com/carlleton/reactjs101/tree/zh-CN)
 2. [前端圈简体中文版本 by @blueflylin]( https://github.com/blueflylin/reactjs101) [特別感謝前端圈小夥伴！](http://fequan.com/)
 
-若需翻译成其他语言版本，請先 `fork` 一份 `repo` 到自己的 Guthub 并另外开新的 `branch`。最后将翻译版本连接更新在 `master` 分支中 `README.md` 的 `相关连接（Links）` 后发送 `Pull Request`，谢谢您。
+若需翻译成其他语言版本，請先 `fork` 一份 `repo` 到自己的 Github 并另外开新的 `branch`。最后将翻译版本连接更新在 `master` 分支中 `README.md` 的 `相关连接（Links）` 后发送 `Pull Request`，谢谢您。
 
 ## 目录（Table of Contents）
 
@@ -48,7 +48,7 @@
 
 本授权条款允许使用者重制、散布、传输以及修改著作，但不得为商业目的之使用。若使用者修改该著作时，仅得依本授权条款或与本授权条款类似者来散布该衍生作品。使用时必须按照著作人指定的方式表彰其姓名。
 
-详细资讯请参考 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
+详细信息请参考 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
 
 ## 关键字（Keywords）
 React, React Native, React Router, Flux, Redux, Node, Express, ImmutableJS, NPM, Babel, Browserify, Webpack, Gulp, Grunt, Pure Functions, PropTypes, Stateless Functional Components, Presentational Components, ES6, ES5, JSX, Jest, Unit Test, Component, Relay, GraphQL, Universal/Isomorphic, React Tutorial React教程, React教学, 学React, React Tutorial, Tutorial, Ecosystem, Front-End
