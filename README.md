@@ -9,7 +9,7 @@
 
 2. [繁体中文范例程序码和书籍内容连载地址](https://github.com/kdchang/reactjs101)
 
-3. [勘误、许愿、建议或提問](https://github.com/kdchang/reactjs101/issues)
+3. [勘误、许愿、建议或提問](https://github.com/blueflylin/reactjs101/issues)
 
 ## 翻译版本（Translate）
 

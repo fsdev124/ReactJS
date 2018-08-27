@@ -895,4 +895,4 @@ $ react-native run-android
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：附录一、React ES5、ES6+ 常见用法对照表](https://github.com/blueflylin/reactjs101/tree/master/Appendix01/README.md) | [下一章：附录三、React 测试入门教学](https://github.com/blueflylin/reactjs101/tree/master/Appendix03/README.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |

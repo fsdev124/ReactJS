@@ -30,7 +30,7 @@
 ## 环境安装与设置
 1. 安装 Node 和 NPM
 
-2. 安装所需套件
+2. 安装所需包
 
 ```
 $ npm install --save react react-dom redux react-redux react-router immutable redux-immutable redux-actions whatwg-fetch redux-thunk material-ui react-tap-event-plugin
@@ -117,7 +117,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	};
 	```
 
-太好了！这样我们就完成了开发环境的设置可以开始动手实操 `Github Finder` 应用程序了！
+太好了！这样我们就完成了开发环境的设置可以开始动手实践 `Github Finder` 应用程序了！
 
 ## 动手实操
 
@@ -394,7 +394,11 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	export default Main;
 	```
 
+<<<<<<< HEAD
 	以下是 `src/components/HomePage/HomePage.js`： 
+=======
+	以下是 `src/components/ResultPage/HomePage.js`： 
+>>>>>>> kdchang/master
 
 	```javascript
 	import React from 'react';
@@ -558,4 +562,4 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Container 与 Presentational Components 入门](https://github.com/blueflylin/reactjs101/blob/master/Ch08/container-presentational-component-.md) | [下一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |

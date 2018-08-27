@@ -17,7 +17,11 @@ NPM（Node Package Manager）是 Node.js 下的主流包管理工具。在 NPM �
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) 系指 ES6（ES2015）和 ES7 的联集，在 ES6+ 新的标准当中引入许多新的特性和功能，弥补了过去 JavaScript 被诟病的一些特性。由于未来 React 将以支持 ES6+ 为主，因此直接学习 ES6+ 用法是相对好的选择，本书的所有范例也将会以 ES6+ 编写。
 
 ## Babel
+<<<<<<< HEAD
 由于并非所有浏览器都支持 ES6+ 语法，所以通过 [Babel](https://babeljs.io/) 这个 JavaScript 编译器（可以想成是翻译机）可以让你的 ES6+ 、JSX 等程序码转换成浏览器可以看的懂得语法。通常会在数据夹的 root 位置加入 `.babelrc` 进行转译规则 `preset` 和引用外挂（plugin）的设定。
+=======
+由於並非所有瀏覽器都支援 ES6+ 語法，所以透過 [Babel](https://babeljs.io/) 這個 JavaScript 編譯器（可以想成是翻譯機或是翻譯蒟篛）可以讓你的 ES6+ 、JSX 等程式碼轉換成瀏覽器可以看得懂的語法。通常會在資料夾的 root 位置加入 `.babelrc` 進行轉譯規則 `preset` 和引用外掛（plugin）的設定。
+>>>>>>> kdchang/master
 
 ## JavaScript 模块化开发
 随著 Web 应用程序的复杂性提高，JavaScript 模块化开发已经成为必然的趋势，以下简单介绍 JavaScript 模块化的相关规范。事实上，在一开始没有官方定义的标准时出现了各种社群自行定义的规范和实践。
@@ -83,7 +87,11 @@ NPM（Node Package Manager）是 Node.js 下的主流包管理工具。在 NPM �
 [React Router](https://github.com/reactjs/react-router) 是 React 中主流使用的 Routing 函数库，通过 URL 的变化来管理对应的状态和元件。若开发不刷页的单页式（single page application）的 React 应用程序通常都会需要用到。
 
 ## Flux/Redux
+<<<<<<< HEAD
 [Flux](https://facebook.github.io/flux/) 是一个实现单项流的应用程序数据架构（architecture），同样是由 Facebook 推出，并和 React 专注于 View 的部份形成互补。而由 Dan Abramov 所开发的 [Redux](https://github.com/reactjs/redux) 被 React 开发社群认为是 Flux-like 更优雅的作法，也是目前主流搭配 React 的状态（State）管理工具。让你在开发复杂的应用程序时可以更方便管理你的状态（state）。
+=======
+[Flux](https://facebook.github.io/flux/) 是一個實現單向流的應用程式資料架構（architecture），同樣是由 Facebook 推出，並和 React 專注於 View 的部份形成互補。而由 Dan Abramov 所開發的 [Redux](https://github.com/reactjs/redux) 被 React 開發社群認為是 Flux-like 更優雅的作法，也是目前主流搭配 React 的狀態（State）管理工具。讓你在開發複雜的應用程式時可以更方便管理你的狀態（state）。
+>>>>>>> kdchang/master
 
 ## ImmutableJS
 [ImmutableJS](https://facebook.github.io/immutable-js/)，是一个能让开发者建立不可变数据结构的函数库。建立不可变（immutable）数据结构不仅可以让状态可预测性更高，也可以提升程序的性能。

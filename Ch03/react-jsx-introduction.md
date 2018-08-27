@@ -1,9 +1,9 @@
-# JSX 简明入门教学指南
+# JSX 简单入门教学指南
 
-![JSX 简明入门教学指南](./images/reactjs.png)
+![JSX 简单入门教学指南](./images/reactjs.png)
 
 ## 前言
-根据 [React](https://facebook.github.io/react/) 官方定义，React 是一个构建使用者介面的 JavaScritp Library。以 MVC 模式来说，ReactJS 主要是负责 View 的部份。过去一段时间，我们被灌输了许多前端分离的观念，在前端三兄弟中（或三姊妹、三剑客）：HTML 掌管内容结构、CSS 负责外观样式，JavaScript 主管逻辑互动，千万不要混在一块。然而，在 React 世界里，所有事物都是 以 Component 为基础，将同一个 Compoent 相关的程序和资源都放在一起，而在编写 React Component 时我们通常会使用 [JSX](https://facebook.github.io/jsx/) 的方式来提升程序编写效率。事实上，JSX 并非一种全新的语言，而是一种语法糖（[Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)），一种语法类似 [XML](https://zh.wikipedia.org/wiki/XML) 的 ECMAScript 语法扩充。在 JSX 中 HTML 和组建这些元素标签的代码有紧密的关系。因此你可能要熟悉一下以 Component 为单位的思考方式（本文主要使用 ES6 语法）。
+根据 [React](https://facebook.github.io/react/) 官方定义，React 是一个构建使用者界面的 JavaScritp Library。以 MVC 模式来说，ReactJS 主要是负责 View 的部分。过去一段时间，我们被灌输了许多前端分离的观念，在前端三兄弟中（或三姐妹、三剑客）：HTML 掌管内容结构、CSS 负责外观样式，JavaScript 主管逻辑互动，千万不要混在一块。然而，在 React 世界里，所有事物都是 以 Component 为基础，将同一个 Compoent 相关的程序和资源都放在一起，而在编写 React Component 时我们通常会使用 [JSX](https://facebook.github.io/jsx/) 的方式来提升程序编写效率。事实上，JSX 并非一种全新的语言，而是一种语法糖（[Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)），一种语法类似 [XML](https://zh.wikipedia.org/wiki/XML) 的 ECMAScript 语法扩充。在 JSX 中 HTML 和组建这些元素标签的代码有紧密的关系。因此你可能要熟悉一下以 Component 为单位的思考方式（本文主要使用 ES6 语法）。
 
 此外，React 和 JSX 的思维在于善用 JavaScript 的强大能力，放弃蹩脚的模版语言，这和 [Angular](https://angularjs.org/) 强化 HTML 的理念也有所不同。当然 JSX 并非强制使用，你也可以选择不用，因为最终 JSX 的内容会转化成 JavaScript（浏览器只看的懂 JavaScript）。不过等你阅读完接下来的内容，你或许会开始发现 JSX 的好，认真考虑使用 JSX 的语法。
 
@@ -171,7 +171,11 @@ React.createElement(
 )
 ```
 
+<<<<<<< HEAD
 解析前（特别注意在 JSX 中使用 JavaScript 表达式时使用 `{}` 括起，如下方范例的 `text`，里面对应的是变数。若需希望放置一般文字，请加上 `''`）：
+=======
+解析前（特別注意在 JSX 中使用 JavaScript 表達式時使用 `{}` 括起，如下方範例的 `text`，裡面對應的是變數。若需放置一般文字，請加上 `''`）：
+>>>>>>> kdchang/master
 
 ```js
 var text = 'Hello React';
@@ -299,4 +303,4 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：ReactJS 与 Component 设计入门介绍](https://github.com/blueflylin/reactjs101/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 与表单处理](https://github.com/blueflylin/reactjs101/blob/master/Ch04/props-state-introduction.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

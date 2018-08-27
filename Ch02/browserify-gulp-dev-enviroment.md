@@ -183,7 +183,7 @@
 
 	![一看就懂的 React 开发环境建置与 Webpack 入门教学](./images/browserify-folder-possgulp.png "一看就懂的 React 开发环境建置与 Webpack 入门教学")
 
-	如果我们是要进行 `production` 的应用程式开发的话，我们可以执行： 
+	如果我们是要进行 `production` 的应用程序开发的话，我们可以执行： 
 
 	```
 	// 当输入 gulp production 时，gulp 会执行 production 的任务，我们这边会执行 `replaceHTML`、`build` 和 `apply-prod-environment` 的任务，`build` 任务会进行编译和 `uglify`。`replaceHTML` 会取代 `index.html` 注解中的 `<script>` 引入文件，变成引入压缩和 `uglify` 后的 `./dist/build/bundle.min.js`。`apply-prod-environment` 则是会更改 `NODE_ENV` 变数，让环境设定改为 `production`，有兴趣的读者可以参考[React 官网说明](https://facebook.github.io/react/downloads.html)
@@ -197,4 +197,4 @@
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | 
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

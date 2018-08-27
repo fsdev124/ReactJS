@@ -75,7 +75,7 @@ React 原本是 Facebook 自己内部使用的开发工具，但却是一个目�
 	```
 
 ## 用 JSX 进行声明式（Declarative）UI 设计
-React 在设计上的思路认为使用 Component 比起模版（Template）和显示逻辑（Display Logic）更能实现关注点分离的概念，而搭配 JSX 可以实现声明式 Declarative（注重 what to），而非命令式 Imperative（注重 how to）的程式撰写方式。
+React 在设计上的思路认为使用 Component 比起模版（Template）和显示逻辑（Display Logic）更能实现关注点分离的概念，而搭配 JSX 可以实现声明式 Declarative（注重 what to），而非命令式 Imperative（注重 how to）的程序编写方式。
 
 像下述的声明式（Declarative）UI 设计就比单纯用（Template）式的方式更易懂：
 
@@ -87,15 +87,15 @@ React 在设计上的思路认为使用 Component 比起模版（Template）和�
 ```javascript
 // <MailForm /> 内部长相
 <form>
-	<input type="text" name="email">
+	<input type="text" name="email" />
 	<button type="submit"></button>
 </form>
 ```
 
-由于 JSX 在 React 组件撰写上扮演很重要的角色，因此在下一个章节我们也将更深入讲解 JSX 使用细节。 
+由于 JSX 在 React 组件编写上扮演很重要的角色，因此在下一个章节我们也将更深入讲解 JSX 使用细节。 
 
 ## 使用 Virtual DOM
-在传统 Web 中一般是使用 jQuery 进行 DOM 的直接操作。然而更改 DOM 往往是 Web 性能的瓶颈，因此在 React 世界设计有 Virtual DOM 的机制，让 App 和 DOM 之间用 Virtual DOM 进行沟通。当更改 DOM 时，会通过 React 自身的 diff 演算法去计算出最小更新，进而去最小化更新真实的 DOM。
+在传统 Web 中一般是使用 jQuery 进行 DOM 的直接操作。然而更改 DOM 往往是 Web 性能的瓶颈，因此在 React 世界设计有 Virtual DOM 的机制，让 App 和 DOM 之间用 Virtual DOM 进行沟通。当更改 DOM 时，会通过 React 自身的 diff 算法去计算出最小更新，进而去最小化更新真实的 DOM。
 
 ## Component PropType 错误校对机制
 在 React 设计时除了提供 props 预设值设定（Default Prop Values）外，也提供了 Prop 的验证（Validation）机制，让整个 Component 设计更加稳健：
@@ -168,4 +168,4 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React 开发环境设置与 Webpack 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) | [下一章：JSX 简明入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

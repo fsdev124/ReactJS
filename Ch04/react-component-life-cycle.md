@@ -1,9 +1,9 @@
-# React Component 规格与生命周期（Life Cycle）
+# React Component 规范与生命周期（Life Cycle）
 
 ## 前言
-经过前面的努力相信目前读者对于用 React 开发一些简单的组件（Component）已经有一定程度的掌握了，现在我们将更细部探讨 React Component 的规格和其生命周期。
+经过前面的努力相信目前读者对于用 React 开发一些简单的组件（Component）已经有一定程度的掌握了，现在我们将更细部探讨 React Component 的规范和其生命周期。
 
-## React Component 规格
+## React Component 规范
 若读者还有印象的话，我们前面介绍 React 特性时有描述 React 的主要编写方式有两种：一种是使用 ES6 Class，另外一种是 Stateless Components，使用 Functional Component 的写法，单纯渲染 UI。这边再帮大家复习一下上一个章节的简单范例：
 
 1. 使用 ES6 的 Class（可以进行比较复杂的操作和组件生命周期的控制，相对于 stateless components 耗费资源）
@@ -218,7 +218,7 @@ ReactDOM.render(
 <a class="jsbin-embed" href="http://jsbin.com/kupusa/embed?html,js,output">点击看详细范例</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 ## 总结
-以上介绍了 React Component 规格与生命周期（Life Cycle）的概念，其中生命周期的概念对于初学者来说可能会比较抽象，建议读者跟著范例动手实践。接下来我们将更进一步介绍 `React Router` 让读者感受一下单页式应用程序（single page application）的设计方式。
+以上介绍了 React Component 规范与生命周期（Life Cycle）的概念，其中生命周期的概念对于初学者来说可能会比较抽象，建议读者跟著范例动手实践。接下来我们将更进一步介绍 `React Router` 让读者感受一下单页式应用程序（single page application）的设计方式。
 
 ## 延伸阅读
 1. [Component Specs and Lifecycle](https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods)
@@ -228,4 +228,4 @@ ReactDOM.render(
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Props、State、Refs 与表单处理](https://github.com/blueflylin/reactjs101/blob/master/Ch04/props-state-introduction.md) | [下一章：React Router 入门实战教学](https://github.com/blueflylin/reactjs101/blob/master/Ch05/react-router-introduction.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

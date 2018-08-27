@@ -62,7 +62,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 3. 设定 Webpack 配置文件： `webpack.config.js`
 
 	```javascript
-	// 让你可以动态插入 bundle 好的 .js 档到 .index.html
+	// 让你可以动态插入 bundle 好的 .js 文件到 .index.html
 	const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 	const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -71,7 +71,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	  inject: 'body',
 	});
 	
-	// entry 为进入点，output 为进行完 eslint、babel loader 转译后的档案位置
+	// entry 为进入点，output 为进行完 eslint、babel loader 转译后的文件位置
 	module.exports = {
 	  entry: [
 	    './src/index.js',
@@ -133,23 +133,23 @@ HTML Markup：
 `Router` 是放置 Route 的容器，其本身不定义 routing ，真正 routing 规则由 `Route` 定义。
 
 2. Route
-`Route` 负责 URL 和对应的组件关系，可以有多个 `Route` 规则也可以有嵌套（nested）`Routing`。像下面的例子就是每个页面都会先载入 `App` 组件再载入对应 URL 的组件。
+`Route` 负责 URL 和对应的组件关系，可以有多个 `Route` 规则也可以有嵌套（nested）`Routing`。像下面的例子就是每个页面都会先加载 `App` 组件再载入对应 URL 的组件。
 
 3. history
-`Router` 中有一个属性 `history` 的规则，这边使用我们使用 `hashHistory`，使用 routing 将由 `hash`（#）变化决定。例如：当使用者拜访 `http://www.github.com/`，实际看到的会是 `http://www.github.com/#/`。下列范例若是拜访了 `/about` 则会看到 `http://localhost:8008/#/about` 并载入 `App` 组件再载入 `About` 组件。
+`Router` 中有一个属性 `history` 的规则，这边使用我们使用 `hashHistory`，使用 routing 将由 `hash`（#）变化决定。例如：当使用者拜访 `http://www.github.com/`，实际看到的会是 `http://www.github.com/#/`。下列范例若是拜访了 `/about` 则会看到 `http://localhost:8008/#/about` 并加载 `App` 组件再加载 `About` 组件。
 
 	- hashHistory
 	教学范例使用的，会通过 `hash` 进行对应。好处是简单易用，不用多余设定。
 
 	- browserHistory
-	适用于伺服器端渲染，但需要设定伺服器端避免处理错误，这部份我们会在后面的章节详细说明。注意的是若是使用 Webpack 开发用伺服器需加上 `--history-api-fallback`
+	适用于服务器端渲染，但需要设定服务器端避免处理错误，这部份我们会在后面的章节详细说明。注意的是若是使用 Webpack 开发用服务器需加上 `--history-api-fallback`
 
 	```
 	$ webpack-dev-server --inline --content-base . --history-api-fallback
 	```
 
 	- createMemoryHistory
-	主要用于伺服器渲染，使用上会建立一个存在记忆体的 `history` 物件，不会修改浏览器的网址位置。
+	主要用于服务器渲染，使用上会建立一个存在内存的 `history` 物件，不会修改浏览器的网址位置。
 
 	```
 	const history = createMemoryHistory(location)
@@ -201,10 +201,10 @@ ReactDOM.render(
   */
 ```
 
-由于我们在 `index.js` 使用嵌套 routing，把 App 组件当做每个组件都会载入的母模版，亦即进入每个对应页面载入对应组件前都会先载入 App 组件。这样就可以让每个页面都有导览列连接可以点选，同时可以透过 `props.children` 载入对应 URL 的子组件。
+由于我们在 `index.js` 使用嵌套 routing，把 App 组件当做每个组件都会加载的母模版，亦即进入每个对应页面加载对应组件前都会先载入 App 组件。这样就可以让每个页面都有导览列连接可以点选，同时可以透过 `props.children` 加载对应 URL 的子组件。
 
 1. Link
-`Link` 组件主要用于点击后连接转换，可以想成是 `<a>` 超连接的 React 版本。若是希望当点击时候有对应的 css style，可以使用 `activeStyle`、`activeClassName` 去做设定。范例分别使用于 `index.html`使用传统 `CSS` 载入、Inline Style、外部引入 `Inline Style` 写法。
+`Link` 组件主要用于点击后连接转换，可以想成是 `<a>` 超连接的 React 版本。若是希望当点击时候有对应的 css style，可以使用 `activeStyle`、`activeClassName` 去做设定。范例分别使用于 `index.html`使用传统 `CSS` 加载、Inline Style、外部引入 `Inline Style` 写法。
 
 2. IndexLink
 IndexLink 主要是了处理 `index` 用途，特别注意当 child route `actived` 时，parent route 也会 `actived`。所以我们回首页的连接使用 `<IndexLink />` 内部的 `onlyActiveOnIndex` 属性来解决这个问题。
@@ -230,7 +230,7 @@ const App = (props) => (
       <li><Link to="/user" activeClassName="active">User</Link></li>
       <li><NavLink to="/contacts">Contacts</NavLink></li>
     </ul>
-    <!-- 我们将 App 组件当做每个组件都会载入的母模版，因此可以透过 children 载入对应 URL 的子组件 -->
+    <!-- 我们将 App 组件当做每个组件都会加载的母模版，因此可以透过 children 加载对应 URL 的子组件 -->
     {props.children}
   </div>
 );
@@ -280,6 +280,6 @@ export default Repos;
 （iamge via [seanamarasinghe](http://seanamarasinghe.com/wp-content/uploads/2016/01/react-router-1050x360.jpg)）
 
 ## 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Component 规格与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) | [下一章：ImmutableJS 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch06/react-immutable-introduction.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Component 规范与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) | [下一章：ImmutableJS 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch06/react-immutable-introduction.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

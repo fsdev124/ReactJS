@@ -3,9 +3,9 @@
 ![React Flux](./images/react-flux.jpeg "React Flux")
 
 ## 前言
-随著 React App 复杂度提升，我们会发现常常需要从 Parent Component 通过 props 传递方法到 Child Component 去改变 state tree，不但不方便也难以管理，因此我们需要更好的数据架构来建置更复杂的应用程序。[Flux](https://facebook.github.io/flux/) 是 Facebook 推出的 client-side 应用程序架构（Architecture），主要想解决 `MVC` 架构的一些问题。事实上，Flux 并非一个完整的前端 Framework，其特色在于实现了 Unidirectional Data Flow（单向流）的数据流设计模式，在开发复杂的大型应用程序时可以更容易地管理 state（状态）。由于 React 主要是负责 View 的部份，所以通过搭配 Flux-like 的数据处理架构，可以更好的去管理我们的 state（状态），处理复杂的使用者互动（例如：Facebook 同时要维护使用者是否点赞、点击相片，是否有新讯息等状态）。
+随着 React App 复杂度提升，我们会发现常常需要从 Parent Component 通过 props 传递方法到 Child Component 去改变 state tree，不但不方便也难以管理，因此我们需要更好的数据架构来建置更复杂的应用程序。[Flux](https://facebook.github.io/flux/) 是 Facebook 推出的 client-side 应用程序架构（Architecture），主要想解决 `MVC` 架构的一些问题。事实上，Flux 并非一个完整的前端 Framework，其特色在于实现了 Unidirectional Data Flow（单向流）的数据流设计模式，在开发复杂的大型应用程序时可以更容易地管理 state（状态）。由于 React 主要是负责 View 的部份，所以通过搭配 Flux-like 的数据处理架构，可以更好的去管理我们的 state（状态），处理复杂的使用者互动（例如：Facebook 同时要维护使用者是否点赞、点击相片，是否有新消息等状态）。
 
-由于原始的 Flux 架构在实现上有些部分可以精简和改善，在实际操作上我们通常会使用开发者社群开发的 Flux-like 相关的架构实现（例如：[Redux](http://redux.js.org/index.html)、[Alt](http://alt.js.org/)、[Reflux](https://github.com/reflux/refluxjs) 等）。不过这边我们主要会使用 Facebook 本身提供 `Dispatcher API` 函式库（可以想成是一个 pub/sub 处理器，通过 broadcast 将 `payloads` 传给注册的 callback function）并搭配 `NodeJS` 的 `EventEmitter` 模块去完成 Flux 架构的实现。  
+由于原始的 Flux 架构在实现上有些部分可以精简和改善，在实际操作上我们通常会使用开发者社群开发的 Flux-like 相关的架构实现（例如：[Redux](http://redux.js.org/index.html)、[Alt](http://alt.js.org/)、[Reflux](https://github.com/reflux/refluxjs) 等）。不过这边我们主要会使用 Facebook 本身提供 `Dispatcher API` 函数库（可以想成是一个 pub/sub 处理器，通过 broadcast 将 `payloads` 传给注册的 callback function）并搭配 `NodeJS` 的 `EventEmitter` 模块去完成 Flux 架构的实现。  
 
 ## Flux 概念介绍
 ![React Flux](./images/flux-simple-diagram.png "React Flux")
@@ -16,7 +16,7 @@
 
   action 负责定义所有改变 state（状态）的行为，可以让开发者快速了解 App 的各种功能，若你想改变 state 你只能发 action。注意 action 可以是同步或是非同步。例如：新增代办事项，调用非同步 API 获取数据。
 
-  实际操作上我们会分成 action 和 Action Creator。action 为描述行为的 object（物件），Action Creator 将 action 送给 dispatcher。一般来说符合 Flux Standard Action 的 action 会如以下范例代码，具备 `type` 来区别所触发的行为。而 `payload` 则是所夹带的数据：
+  实际操作上我们会分成 action 和 Action Creator。action 为描述行为的 object（对象），Action Creator 将 action 送给 dispatcher。一般来说符合 Flux Standard Action 的 action 会如以下范例代码，具备 `type` 来区别所触发的行为。而 `payload` 则是所夹带的数据：
 
   ```
   // action
@@ -350,4 +350,4 @@ Flux 劣势：
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：ImmutableJS 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch06/react-immutable-introduction.md) | [下一章：Redux 基础概念](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-redux-introduction.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |
