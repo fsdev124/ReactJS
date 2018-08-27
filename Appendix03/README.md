@@ -14,7 +14,7 @@
 
 在这边我们先介绍一些比较常用的 Mocha 使用方法，让大家熟悉测试的用法（若是已经熟悉编写测试代码的读者这部份可以跳过）：
 
-1. 安装环境与套件
+1. 安装环境与包
 
 	安装 `react` 和 `react-dom`
 
@@ -22,17 +22,17 @@
 	$ npm install --save react react-dom
 	```
 
-	可以在全域安装 mocha：  
+	可以在全局安装 mocha：  
 
 	```
 	$ npm install --global mocha
 	```
 
-	也可以在开发环境下本地端安装（同时安装了 babel、eslint、webpack 等相关套件，其中以 mocha、chai、babel 为主要必须）：
+	也可以在开发环境下本地端安装（同时安装了 babel、eslint、webpack 等相关包，其中以 mocha、chai、babel 为主要必须）：
 
 	```
 	$ npm install --save-dev babel-core babel-loader babel-eslint babel-preset-react babel-preset-es2015 eslint eslint-config-airbnb eslint-loader eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react webpack webpack-dev-server html-webpack-plugin chai mocha
-```
+	```
 
 2. 测试代码
 	1. describe（test suite）：表示一组相关的测试。`describe` 为一个函数，第一个参数为 `test suite`的名称，第二个参数为实际执行的函数。
@@ -100,7 +100,7 @@
 	^^^^^^
 	```
 
-	我们先行设定 `.bablerc`，我们在之前已经有安装 `babel` 相关套件和 `presets` 所以就会将 ES2015 语法转译。
+	我们先做好配置 `.bablerc`，我们在之前已经有安装 `babel` 相关包和 `presets` 所以就会将 ES2015 语法转译。
 
 	```
 	{
@@ -120,7 +120,7 @@
 	$ ./node_modules/mocha/bin/mocha --compilers js:babel-core/register
 	```
 
-	若是使用全域：
+	若是使用全局：
 
 	```
 	$ mocha --compilers js:babel-core/register
@@ -229,7 +229,7 @@
 
 1. Shallow Rendering（createRenderer）
 
-	Shallow Rendering 系指将一个 Virtual DOM 渲染成子 Component，但是只渲染第一层，不渲染所有子组件，因此处理速度快且不需要 DOM 环境。Shallow rendering 在单元测试非常有用，由于只测试一个特定的 component，而重要的不是它的 children。这也意味著改变一个 child component 不会影响 parent component 的测试。
+	Shallow Rendering 系指将一个 Virtual DOM 渲染成子 Component，但是只渲染第一层，不渲染所有子组件，因此处理速度快且不需要 DOM 环境。Shallow rendering 在单元测试非常有用，由于只测试一个特定的 component，而重要的不是它的 children。这也意味着改变一个 child component 不会影响 parent component 的测试。
 
 	以下是 `react-addons-test-utils-example/src/test/shallowRender.test.js`：
 
@@ -486,4 +486,4 @@ $ npm test
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：附录二、用 React Native + Firebase 开发跨平台行动应用程序](https://github.com/blueflylin/reactjs101/blob/master/Appendix02/README.md) | [下一章：附录四、GraphQL/Relay 初体验](https://github.com/blueflylin/reactjs101/blob/master/Appendix04/README.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |

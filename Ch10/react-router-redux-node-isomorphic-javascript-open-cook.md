@@ -11,7 +11,7 @@ Let's GO！
 1. React Router / Redux / Immutable / Server Render / Async API
 2. 使用者登录/登出（JSON Web Token）
 3. CRUD 表单资料处理
-4. 资料库串接(ORM/MongoDB)
+4. 数据库串接(ORM/MongoDB)
 
 ## 使用技术
 1. React
@@ -38,7 +38,7 @@ Let's GO！
 ## 环境安装与设定
 1. 安装 Node 和 NPM
 
-2. 安装所需套件
+2. 安装所需包
 
 ```
 $ npm install --save react react-dom redux react-redux react-router immutable redux-immutable redux-actions redux-promise bcrypt body-parser cookie-parser debug express immutable jsonwebtoken mongoose morgan passport passport-local react-router-bootstrap axios serve-favicon validator uuid
@@ -50,7 +50,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 
 接下来我们先设定一下开发文档。
 
-1. 设定 Babel 的设定档： `.babelrc`
+1. 设定 Babel 的配置文件： `.babelrc`
 
   ```javascript
   {
@@ -1474,7 +1474,7 @@ export default connect(
 ![用 React + Redux + Node（Isomorphic）开发一个食谱分享网站](./images/open-cook-demo-1.png "用 React + Redux + Node（Isomorphic）开发一个食谱分享网站")
 
 ## 总结
-本章整合过去所学和添加一些后端资料库知识开发了一个可以登录会员并分享食谱的社群网站！快把你的成果和你的朋友分享吧！觉得意犹未尽？别忘了附录也很精采！最后，再次谢谢读者们支持我们一路走完了 React 开发学习之旅！然而前端技术变化很快，唯有不断自我学习才能持续成长。笔者才疏学浅，撰写学习心得或有疏漏，若有任何建议或提醒都欢迎和我说，大家一起加油：）
+本章整合过去所学和添加一些后端数据库知识开发了一个可以登录会员并分享食谱的社群网站！快把你的成果和你的朋友分享吧！觉得意犹未尽？别忘了附录也很精采！最后，再次谢谢读者们支持我们一路走完了 React 开发学习之旅！然而前端技术变化很快，唯有不断自我学习才能持续成长。笔者才疏学浅，编写学习心得或有疏漏，若有任何建议或提醒都欢迎和我说，大家一起加油：）
 
 ## 延伸阅读
 1. [joshgeller/react-redux-jwt-auth-example](https://github.com/joshgeller/react-redux-jwt-auth-example)
@@ -1506,4 +1506,4 @@ MIT, Special thanks [Loading.io](http://loading.io/)
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) | [下一章：附录一、React ES5、ES6+ 常见用法对照表](https://github.com/blueflylin/reactjs101/tree/master/Appendix01) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |

@@ -36,7 +36,7 @@ class HelloMessage extends React.Component {
 		super(props);
 		this.state = {}
 	}
-	// render 是唯一必須的方法，但如果是單純 render UI 建議使用 Functional Component 寫法，效能較佳且較簡潔
+	// render 是唯一必须的方法，但如果是单纯 render UI 建议使用 Functional Component 写法，性能较佳且简洁
 	render() {
 		return (
 			<div>Hello {this.props.name}</div>
@@ -51,7 +51,7 @@ HelloMessage.propTypes = {
 
 // Prop 预设值，若对应 props 没传入值将会使用 default 值 Zuck
 HelloMessage.defaultProps = {
- name: 'Zuck', 
+ name: 'Zuck',
 }
 
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
@@ -62,7 +62,7 @@ ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
 使用 Functional Component 写法：
 
 ```javascript
-// Functional Component 可以视为 f(d) => UI，根据传进去的 props 绘出对应的 UI。注意这边 props 是传入函式的参数，因此取用 props 不用加 this
+// Functional Component 可以视为 f(d) => UI，根据传进去的 props 绘出对应的 UI。注意这边 props 是传入函数的参数，因此取用 props 不用加 this
 const HelloMessage = (props) => (
 	<div>Hello {props.name}</div>
 );
@@ -74,7 +74,7 @@ HelloMessage.propTypes = {
 
 // Prop 预设值，若对应 props 没传入值将会使用 default 值 Zuck。用法等于 ES5 的 getDefaultProps
 HelloMessage.defaultProps = {
- name: 'Zuck', 
+ name: 'Zuck',
 }
 
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
@@ -112,7 +112,7 @@ app.js：
 class Timer extends React.Component {
 	constructor(props) {
 		super(props);
-		// 与 ES5 React.createClass({}) 不同的是 component 内自定义的方法需要自行绑定 this context，或是使用 arrow function 
+		// 与 ES5 React.createClass({}) 不同的是 component 内自定义的方法需要自行绑定 this context，或是使用 arrow function
         this.tick = this.tick.bind(this);
 		// 初始 state，等于 ES5 中的 getInitialState
 		this.state = {
@@ -127,7 +127,7 @@ class Timer extends React.Component {
 	componentDidMount() {
 	    this.interval = setInterval(this.tick, 1000);
 	}
-	// componentWillUnmount 为 component 生命周期中 component 即将移出插入的节点的阶段。这边移除了 setInterval 效力 
+	// componentWillUnmount 为 component 生命周期中 component 即将移出插入的节点的阶段。这边移除了 setInterval 效果
 	componentWillUnmount() {
 		clearInterval(this.interval);
 	}
@@ -135,7 +135,7 @@ class Timer extends React.Component {
 	render() {
 	    return (
 	      <div>Seconds Elapsed: {this.state.secondsElapsed}</div>
-	    );		
+	    );
 	}
 }
 
@@ -199,16 +199,16 @@ class TodoApp extends React.Component {
     	this.setState({items: nextItems, text: nextText});
 	}
 	render() {
-    return (
-      <div>
-        <h3>TODO</h3>
-        <TodoList items={this.state.items} />
-        <form onSubmit={this.handleSubmit}>
-          <input onChange={this.onChange} value={this.state.text} />
-          <button>{'Add #' + (this.state.items.length + 1)}</button>
-        </form>
-      </div>
-    );
+	    return (
+	      <div>
+	        <h3>TODO</h3>
+	        <TodoList items={this.state.items} />
+	        <form onSubmit={this.handleSubmit}>
+	          <input onChange={this.onChange} value={this.state.text} />
+	          <button>{'Add #' + (this.state.items.length + 1)}</button>
+	        </form>
+	      </div>
+	    );
 	}
 }
 
@@ -233,6 +233,7 @@ HTML Markup (除了引入 `react` 、 `react-dom` 还要用 `CDN` 方式引入 `
 <body>
 <script src="https://fb.me/react-15.1.0.js"></script>
 <script src="https://fb.me/react-dom-15.1.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/remarkable/1.6.2/remarkable.min.js"></script>
   <div id="app"></div>
 	<script type="text/babel" src="./app.js"></script>
@@ -290,6 +291,6 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 3. [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：JSX 简明入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规格与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
+| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：JSX 简单入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规范与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |

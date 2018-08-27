@@ -483,4 +483,4 @@ var link = function(height = 50, color = 'red') {
 ## :door: 任意门
 | [回首页](https://github.com/kdchang/reactjs101) | [上一章：用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-router-redux-node-isomorphic-javascript-open-cook.md) | [下一章：用 React Native + Firebase 开发跨平台行动应用程序](https://github.com/blueflylin/reactjs101/blob/master/Appendix02/README.md) |
 
-| [勘误、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [勘误、提问或许愿](https://github.com/blueflylin/reactjs101/issues) |

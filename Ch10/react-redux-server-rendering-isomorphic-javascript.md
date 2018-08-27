@@ -160,13 +160,13 @@ ReactDOMServer.renderToString(<HelloButton name="Mark" />);
   };
   ```
 
-太好了！这样我们就完成了开发环境的设置可以开始动手实作 `React Server Side Rendering Counter` 应用程序了！  
+太好了！这样我们就完成了开发环境的设置可以开始动手实践 `React Server Side Rendering Counter` 应用程序了！  
 
-先看一下我们整个专案的数据结构，我们把整个专案分成三个主要的文件夹（`client`、`server`，还有共用代码的 `common`）：
+先看一下我们整个项目的数据结构，我们把整个项目分成三个主要的文件夹（`client`、`server`，还有共用代码的 `common`）：
 
 ![React Redux Sever Rendering（Isomorphic）入门](./images/react-server-rendering-folder.png "React Redux Sever Rendering（Isomorphic）入门")
 
-## 动手实作
+## 动手实践
 
 首先，我们先定义了 `client` 的 `index.js`：
 
@@ -311,7 +311,7 @@ export const INCREMENT_COUNT = 'INCREMENT_COUNT';
 export const DECREMENT_COUNT = 'DECREMENT_COUNT';  
 ```
 
-在这个范例中我们使用 `setTimeout()` 来仿真异步的产生数据让 server 端在每次接收 request 时读取随机产生的值。实务上，我们会开 API 让 Server 读取初始要导入的 initialState。
+在这个范例中我们使用 `setTimeout()` 来仿真异步的产生数据让 server 端在每次接收 request 时读取随机产生的值。事实上，我们会开 API 让 Server 读取初始要导入的 initialState。
 
 ```javascript
 function getRandomInt(min, max) {
@@ -429,7 +429,7 @@ export default connect(
   (state) => ({
     count: state.get('counterReducers').get('count'),
   }),
-  (dispatch) => ({ 
+  (dispatch) => ({
     onIncrement: () => (
       dispatch(incrementCount())
     ),
@@ -462,4 +462,4 @@ export default connect(
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：用 React + Router + Redux + ImmutableJS 写一个 Github 查找应用](https://github.com/blueflylin/reactjs101/blob/master/Ch09/react-router-redux-github-finder.md) | [下一章：用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-router-redux-node-isomorphic-javascript-open-cook.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |

@@ -13,11 +13,11 @@ GraphQL 的出现主要是为了要解决 Web/Mobile 端不断增加的 API 请�
 
 GraphQL 主要由以下组件构成：
 
-1. 类别系统（Type System）
+1. 类型系统（Type System）
 2. 查询语言（Query Language）：在 Operations 中 query 只读取数据而 mutation 写入操作
-3. 执行语意（Execution Semantics）
+3. 执行语句（Execution Semantics）
 4. 静态验证（Static Validation）
-5. 类别检查（Type Introspection）
+5. 类型检查（Type Introspection）
 
 一般 RESTful 在取用资源时会对应到 HTTP 中 `GET`、`POST`、`DELETE`、`PUT` 等方法，并以 URL 对应的方式去取得资源，例如：
 
@@ -63,8 +63,8 @@ GET `/users/3500401`
 
 在 GraphQL 中有取得数据 Query、更改数据 Mutation 等操作。以下我们先介绍如何建立 GraphQL Server 并取得数据。
 
-1. 环境建置
-	接下来我们将动手建立 GraphQL 的简单范例，让大家感受一下 GraphQL 的特性，在这之前我们需要先安装以下套件建立好环境：
+1. 环境配置
+	接下来我们将动手建立 GraphQL 的简单范例，让大家感受一下 GraphQL 的特性，在这之前我们需要先安装以下包并搭建好环境：
 
 	1. [graphql](https://github.com/graphql/graphql-js)：GraphQL 的 JavaScript 实践.
 	2. [express](https://github.com/expressjs/express)：Node web framework.
@@ -355,4 +355,4 @@ React 生态系中，除了前端 View 的部份有革新性的创新外，Graph
 ## :door: 任意门
 | [回首页](https://github.com/blueflylin/reactjs101) | [上一章：附录三、React 测试入门教学](https://github.com/blueflylin/reactjs101/blob/master/Appendix03/README.md) | 
 
-| [纠正、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠正、提问或许愿](https://github.com/blueflylin/reactjs101/issues) |
