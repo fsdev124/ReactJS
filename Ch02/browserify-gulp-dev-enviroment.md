@@ -195,6 +195,6 @@
 (image via [srinisoundar](https://cdn-images-1.medium.com/max/477/1*qhI4E_g3TDOK0uu1VAJlCQ.png)、[sitepoint](https://d2sis3lil8ndrq.cloudfront.net/screencasts/46e215cd-2eb3-4cf0-b699-713977a2b644.png)、[keyholesoftware](https://keyholesoftware.com/wp-content/uploads/Browserify-5.png)、[survivejs](http://survivejs.com/webpack/images/webpack.png))
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | 
+| [回首页](https://github.com/fsdev124/reactjs) | 
 
-| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs101/issues) |

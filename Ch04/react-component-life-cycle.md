@@ -226,6 +226,6 @@ ReactDOM.render(
 （image via [react-lifecycle](http://imgh.us/react-lifecycle.svg)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Props、State、Refs 与表单处理](https://github.com/blueflylin/reactjs101/blob/master/Ch04/props-state-introduction.md) | [下一章：React Router 入门实战教学](https://github.com/blueflylin/reactjs101/blob/master/Ch05/react-router-introduction.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：Props、State、Refs 与表单处理](https://github.com/fsdev124/reactjs/blob/master/Ch04/props-state-introduction.md) | [下一章：React Router 入门实战教学](https://github.com/fsdev124/reactjs/blob/master/Ch05/react-router-introduction.md) |
 
-| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs101/issues) |

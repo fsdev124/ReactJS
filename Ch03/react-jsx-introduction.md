@@ -175,7 +175,7 @@ React.createElement(
 解析前（特别注意在 JSX 中使用 JavaScript 表达式时使用 `{}` 括起，如下方范例的 `text`，里面对应的是变数。若需希望放置一般文字，请加上 `''`）：
 =======
 解析前（特別注意在 JSX 中使用 JavaScript 表達式時使用 `{}` 括起，如下方範例的 `text`，裡面對應的是變數。若需放置一般文字，請加上 `''`）：
->>>>>>> kdchang/master
+>>>>>>> fsdev124/master
 
 ```js
 var text = 'Hello React';
@@ -296,11 +296,10 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 ## 延伸阅读
 1. [Imperative programming or declarative programming](http://www.puritys.me/docs-blog/article-320-Imperative-programming-or-declarative-programming.html)
 2. [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
-3. [从零开始学 React（ReactJS 101）](https://www.gitbook.com/book/kdchang/react101/details)
 
 （image via [adweek](http://www.adweek.com/socialtimes/files/2014/05/LikeButtoniOSApps650.jpg), [codecondo](http://codecondo.com/wp-content/uploads/2015/12/Useful-Features-of-React_7851.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：ReactJS 与 Component 设计入门介绍](https://github.com/blueflylin/reactjs101/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 与表单处理](https://github.com/blueflylin/reactjs101/blob/master/Ch04/props-state-introduction.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：ReactJS 与 Component 设计入门介绍](https://github.com/fsdev124/reactjs/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 与表单处理](https://github.com/fsdev124/reactjs/blob/master/Ch04/props-state-introduction.md) |
 
-| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs101/issues) |

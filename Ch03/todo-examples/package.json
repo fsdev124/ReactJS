@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --colors --inline --content-base ."
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.10.4",

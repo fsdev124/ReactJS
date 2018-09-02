@@ -21,7 +21,7 @@ NPM（Node Package Manager）是 Node.js 下的主流包管理工具。在 NPM �
 由于并非所有浏览器都支持 ES6+ 语法，所以通过 [Babel](https://babeljs.io/) 这个 JavaScript 编译器（可以想成是翻译机）可以让你的 ES6+ 、JSX 等程序码转换成浏览器可以看的懂得语法。通常会在数据夹的 root 位置加入 `.babelrc` 进行转译规则 `preset` 和引用外挂（plugin）的设定。
 =======
 由於並非所有瀏覽器都支援 ES6+ 語法，所以透過 [Babel](https://babeljs.io/) 這個 JavaScript 編譯器（可以想成是翻譯機或是翻譯蒟篛）可以讓你的 ES6+ 、JSX 等程式碼轉換成瀏覽器可以看得懂的語法。通常會在資料夾的 root 位置加入 `.babelrc` 進行轉譯規則 `preset` 和引用外掛（plugin）的設定。
->>>>>>> kdchang/master
+>>>>>>> fsdev124/master
 
 ## JavaScript 模块化开发
 随著 Web 应用程序的复杂性提高，JavaScript 模块化开发已经成为必然的趋势，以下简单介绍 JavaScript 模块化的相关规范。事实上，在一开始没有官方定义的标准时出现了各种社群自行定义的规范和实践。
@@ -91,7 +91,7 @@ NPM（Node Package Manager）是 Node.js 下的主流包管理工具。在 NPM �
 [Flux](https://facebook.github.io/flux/) 是一个实现单项流的应用程序数据架构（architecture），同样是由 Facebook 推出，并和 React 专注于 View 的部份形成互补。而由 Dan Abramov 所开发的 [Redux](https://github.com/reactjs/redux) 被 React 开发社群认为是 Flux-like 更优雅的作法，也是目前主流搭配 React 的状态（State）管理工具。让你在开发复杂的应用程序时可以更方便管理你的状态（state）。
 =======
 [Flux](https://facebook.github.io/flux/) 是一個實現單向流的應用程式資料架構（architecture），同樣是由 Facebook 推出，並和 React 專注於 View 的部份形成互補。而由 Dan Abramov 所開發的 [Redux](https://github.com/reactjs/redux) 被 React 開發社群認為是 Flux-like 更優雅的作法，也是目前主流搭配 React 的狀態（State）管理工具。讓你在開發複雜的應用程式時可以更方便管理你的狀態（state）。
->>>>>>> kdchang/master
+>>>>>>> fsdev124/master
 
 ## ImmutableJS
 [ImmutableJS](https://facebook.github.io/immutable-js/)，是一个能让开发者建立不可变数据结构的函数库。建立不可变（immutable）数据结构不仅可以让状态可预测性更高，也可以提升程序的性能。
@@ -126,6 +126,6 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 （image via [jpsierens](http://jpsierens.com/wp-content/uploads/2016/06/react-eco-wp.gif)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Web 前端工程入门简介](https://github.com/blueflylin/reactjs101/blob/master/Ch01/front-end-introduction.md) | [下一章：React 开发环境设置与 Webpack 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：Web 前端工程入门简介](https://github.com/fsdev124/reactjs/blob/master/Ch01/front-end-introduction.md) | [下一章：React 开发环境设置与 Webpack 入门教学](https://github.com/fsdev124/reactjs/blob/master/Ch02/webpack-dev-enviroment.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或许愿](https://github.com/fsdev124/reactjs101/issues) |

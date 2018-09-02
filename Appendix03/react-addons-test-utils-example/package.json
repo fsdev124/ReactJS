@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --colors --inline --content-base .",
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js --recursive"
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "dependencies": {
     "react": "^15.3.0",

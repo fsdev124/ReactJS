@@ -291,6 +291,6 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 3. [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：JSX 简单入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规范与生命周期（Life Cycle）](https://github.com/blueflylin/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：JSX 简单入门教学指南](https://github.com/fsdev124/reactjs/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 规范与生命周期（Life Cycle）](https://github.com/fsdev124/reactjs/blob/master/Ch04/react-component-life-cycle.md) |
 
-| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs101/issues) |

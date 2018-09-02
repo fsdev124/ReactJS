@@ -1504,6 +1504,6 @@ export default connect(
 MIT, Special thanks [Loading.io](http://loading.io/)
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) | [下一章：附录一、React ES5、ES6+ 常见用法对照表](https://github.com/blueflylin/reactjs101/tree/master/Appendix01) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：React Redux Sever Rendering（Isomorphic JavaScript）入门](https://github.com/fsdev124/reactjs/blob/master/Ch10/react-redux-server-rendering-isomorphic-javascript.md) | [下一章：附录一、React ES5、ES6+ 常见用法对照表](https://github.com/fsdev124/reactjs/tree/master/Appendix01) |
 
-| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs/issues) |

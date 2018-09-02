@@ -16,7 +16,7 @@ export const getGithub = (userId = 'torvalds') => {
   console.log('github action');
 =======
 export const getGithub = (userId = 'torvalds') => (
->>>>>>> kdchang/master
+>>>>>>> fsdev124/master
   (dispatch) => {
     dispatch({ type: GET_GITHUB_INITIATE });
     dispatch(showSpinner());

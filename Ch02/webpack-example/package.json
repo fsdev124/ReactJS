@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
 
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "dependencies": {
     "react": "^15.2.1",

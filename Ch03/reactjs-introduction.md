@@ -166,6 +166,6 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 （image via [maketea](http://maketea.co.uk/images/2014-03-05-robust-web-apps-with-react-part-1/wireframe_deconstructed.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：React 开发环境设置与 Webpack 入门教学](https://github.com/blueflylin/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) | [下一章：JSX 简明入门教学指南](https://github.com/blueflylin/reactjs101/blob/master/Ch03/react-jsx-introduction.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：React 开发环境设置与 Webpack 入门教学](https://github.com/fsdev124/reactjs/blob/master/Ch02/webpack-dev-enviroment.md) | [下一章：JSX 简明入门教学指南](https://github.com/fsdev124/reactjs/blob/master/Ch03/react-jsx-introduction.md) |
 
-| [纠错、提问或想法](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs101/issues) |

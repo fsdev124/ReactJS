@@ -460,6 +460,6 @@ export default connect(
 （image via [airbnb](http://nerds.airbnb.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-06-at-5.21.00-PM.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：用 React + Router + Redux + ImmutableJS 写一个 Github 查找应用](https://github.com/blueflylin/reactjs101/blob/master/Ch09/react-router-redux-github-finder.md) | [下一章：用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站](https://github.com/blueflylin/reactjs101/blob/master/Ch10/react-router-redux-node-isomorphic-javascript-open-cook.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：用 React + Router + Redux + ImmutableJS 写一个 Github 查找应用](https://github.com/fsdev124/reactjs/blob/master/Ch09/react-router-redux-github-finder.md) | [下一章：用 React + Redux + Node（Isomorphic JavaScript）开发食谱分享网站](https://github.com/fsdev124/reactjs/blob/master/Ch10/react-router-redux-node-isomorphic-javascript-open-cook.md) |
 
-| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs/issues) |

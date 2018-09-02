@@ -353,6 +353,6 @@ React 生态系中，除了前端 View 的部份有革新性的创新外，Graph
 （image via [facebook](https://facebook.github.io/react/img/blog/relay-components/relay-architecture.png)、[kadira](https://cldup.com/uhBzqnK002.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：附录三、React 测试入门教学](https://github.com/blueflylin/reactjs101/blob/master/Appendix03/README.md) | 
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：附录三、React 测试入门教学](https://github.com/fsdev124/reactjs/blob/master/Appendix03/README.md) | 
 
-| [纠正、提问或许愿](https://github.com/blueflylin/reactjs101/issues) |
+| [纠正、提问或许愿](https://github.com/fsdev124/reactjs/issues) |

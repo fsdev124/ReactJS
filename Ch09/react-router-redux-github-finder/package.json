@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --colors --inline --content-base ."
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "dependencies": {
     "immutable": "^3.8.1",

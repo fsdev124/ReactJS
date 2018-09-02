@@ -484,6 +484,6 @@ $ npm test
 （image via [Anthony Ng](https://cdn-images-1.medium.com/max/800/1*CrB6isZN6YXeM1rWmnjxHw.png)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：附录二、用 React Native + Firebase 开发跨平台行动应用程序](https://github.com/blueflylin/reactjs101/blob/master/Appendix02/README.md) | [下一章：附录四、GraphQL/Relay 初体验](https://github.com/blueflylin/reactjs101/blob/master/Appendix04/README.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：附录二、用 React Native + Firebase 开发跨平台行动应用程序](https://github.com/fsdev124/reactjs/blob/master/Appendix02/README.md) | [下一章：附录四、GraphQL/Relay 初体验](https://github.com/fsdev124/reactjs/blob/master/Appendix04/README.md) |
 
-| [纠错、提问或想法](https://github.com/blueflylin/reactjs101/issues) |
+| [纠错、提问或想法](https://github.com/fsdev124/reactjs/issues) |

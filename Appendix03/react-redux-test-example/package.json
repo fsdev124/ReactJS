@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --colors --inline --content-base .",
     "test": "mocha --compilers js:babel-core/register"
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "dependencies": {
     "immutable": "^3.8.1",

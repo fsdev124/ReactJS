@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --colors --inline --content-base .",
     "test": "mocha -t 5000 --compilers js:babel-core/register"
   },
-  "author": "kdchang",
+  "author": "fsdev",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.14.0",

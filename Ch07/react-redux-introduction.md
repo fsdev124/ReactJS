@@ -156,6 +156,6 @@ store.dispatch({ type: 'DECREMENT' });
 （image via [githubusercontent](https://raw.githubusercontent.com/reactjs/redux/master/logo/logo-title-dark.png)、[makeitopen](http://makeitopen.com/static/images/redux_flowchart.png)、[css-tricks](https://css-tricks.com/wp-content/uploads/2016/03/redux-article-3-03.svg)、[tighten](https://blog.tighten.co/assets/img/react-redux-diagram.png)、[tryolabs](http://blog.tryolabs.com/wp-content/uploads/2016/04/redux-simple-f8-diagram.png)、[facebook](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)、[JonasOhlsson](http://www.slideshare.net/JonasOhlsson/using-redux)）
 
 ## :door: 任意门
-| [回首页](https://github.com/blueflylin/reactjs101) | [上一章：Flux 基础概念与实战入门](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-flux-introduction.md) | [下一章：Redux 实战入门](https://github.com/blueflylin/reactjs101/blob/master/Ch07/react-redux-real-world-example.md) |
+| [回首页](https://github.com/fsdev124/reactjs) | [上一章：Flux 基础概念与实战入门](https://github.com/fsdev124/reactjs/blob/master/Ch07/react-flux-introduction.md) | [下一章：Redux 实战入门](https://github.com/fsdev124/reactjs/blob/master/Ch07/react-redux-real-world-example.md) |
 
-| [纠错、提问或许愿](https://github.com/kdchang/reactjs101/issues) |
+| [纠错、提问或许愿](https://github.com/fsdev124/reactjs101/issues) |
